@@ -85,7 +85,7 @@ a {
     padding: 0;
     display: grid;
     grid-template-columns: 11.5% 36% 6% 36% 11.5%;
-    grid-template-rows: repeat(4, 164px) 66px 210px 164px;
+    grid-template-rows: repeat(8, auto);
     row-gap: 12px;
     align-items: center;
 }
@@ -98,7 +98,6 @@ a {
 #bio-text-home {
     font-size: 14px; 
     max-width: 100%;
-    max-height: 328px;
     align-self: start;
     grid-area: 4 / 2 / span 2 / span 3;;
 }
@@ -106,23 +105,23 @@ a {
 #my-work-home {
     font-size: 32px;
     font-weight: 300;
-    grid-area: 5 / 2 / span 1 / span 3;
+    grid-area: 6 / 2 / span 1 / span 3;
     justify-self: center;
     align-self: center;
 }
 
 #work-image-home-one {
     max-width: 100%;
-    grid-area: 6 / 2 / span 1 / span 1;
+    grid-area: 7 / 2 / span 1 / span 1;
 }
 #work-image-home-two {
     max-width: 100%;
-    grid-area: 6 / 4 / span 1 / span 1;
+    grid-area: 7 / 4 / span 1 / span 1;
 }
 #my-work-text-home {
     font-size: 14px;
     align-self: start;
-    grid-area: 7 / 2 / span 1 / span 3;
+    grid-area: 8 / 2 / span 1 / span 3;
 
 }
 

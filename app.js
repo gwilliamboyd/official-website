@@ -8,6 +8,8 @@ mobileMenu.addEventListener("click", () => {
     navBarLinks.style.display = navBarLinks.style.display == "none" ? "flex" : "none";
     });
 
+// OLD METHOD - W3 Schools - didn't work
+
 // function toggleMenu() {
 //     console.log("Hello world!");    
 
