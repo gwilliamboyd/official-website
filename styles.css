@@ -84,6 +84,7 @@ a {
 #bio-container-home {
     padding: 0;
     display: grid;
+    max-width: 100%;
     grid-template-columns: 11.5% 36% 6% 36% 11.5%;
     grid-template-rows: repeat(8, auto);
     row-gap: 12px;
@@ -123,6 +124,47 @@ a {
     align-self: start;
     grid-area: 8 / 2 / span 1 / span 3;
 
+}
+
+/* HOME MEDIA QUERIES */
+
+@media (min-width: 600px) {
+    #body-home {
+        padding-top: 24px;
+    }
+    /* - widens wide columns, narrows middle column
+       - only 5 rows are being used in tablet layout, 
+         so last 3 rows have been removed */ 
+    #bio-container-home {
+        grid-template-columns: 9% 40% 3% 40% 9%;
+        grid-template-rows: repeat(5, auto);
+        row-gap: 24px;
+    }
+
+    #bio-container-home #tall-portrait {
+        grid-area: 1 / 2 / span 2 / span 1;
+    }
+
+    #bio-text-home {
+        font-size: 23px;
+        grid-area: 1 / 4 / span 2 / span 1;;
+    }
+    #my-work-home {
+        font-size: 42px;
+        grid-area: 3 / 2 / span 1 / span 3;
+    }
+    
+    #work-image-home-one {
+        grid-area: 4 / 2 / span 1 / span 1;
+    }
+    #work-image-home-two {
+        grid-area: 4 / 4 / span 1 / span 1;
+    }
+    #my-work-text-home {
+        font-size: 24px;
+        grid-area: 5 / 2 / span 1 / span 3;
+    
+    }
 }
 
 
