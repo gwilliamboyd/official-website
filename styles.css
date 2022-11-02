@@ -297,8 +297,20 @@ a {
     #bio-text-home {
         font-size: 26px;
         line-height: 2.0em;
-        grid-area: 1 / 3 / span 2 / span 2;
+        grid-area: 1 / 4 / span 2 / span 1;
         align-self: center;
+    }
+
+    #work-image-home-one, #work-image-home-two {
+        width: 80%;
+    }
+
+    #work-image-home-one {
+        justify-self: end;
+    }
+
+    #work-image-home-two {
+        justify-self: start;
     }
 }
 
