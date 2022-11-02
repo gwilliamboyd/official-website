@@ -1,11 +1,11 @@
 const mobileMenu = document.getElementById("mobile-menu-icon");
-const navBarLinks = document.getElementById("nav-bar-links");
-navBarLinks.style.display = "none";
+const mobileMenuLinks = document.getElementById("mobile-menu-links");
+mobileMenuLinks.style.display = "none";
 
 let menuActive = false;
 
 mobileMenu.addEventListener("click", () => {
-    navBarLinks.style.display = navBarLinks.style.display == "none" ? "flex" : "none";
+    mobileMenuLinks.style.display = mobileMenuLinks.style.display == "none" ? "flex" : "none";
     });
 
 // OLD METHOD - W3 Schools - didn't work
