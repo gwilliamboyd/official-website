@@ -639,7 +639,8 @@ button:hover {
         grid-area: 2 / 2 / span 2 / span 1;
     }
     #skills-icons img {
-        width: 120px;
+        width: 17
+        0px;
     }
     #bio-heading {
         grid-area: 1 / 4 / span 1 / span 1; 
