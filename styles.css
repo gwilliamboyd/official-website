@@ -90,6 +90,9 @@ button:hover {
    line-height: 2.0em;
    width: 100%; 
    text-align: right;
+   position: sticky;
+   top: 0;
+   background-color: rgba(18, 18, 18, 0.5);
 }
 
 #mobile-menu-ul ul {
