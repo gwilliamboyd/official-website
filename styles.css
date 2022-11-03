@@ -370,7 +370,7 @@ button:hover {
     min-width: 100%;
     max-width: 100%;
     height: 100%;
-    padding-top: 12px;    
+    padding: 12px 0;    
 }
 
 #bio-container-work {
@@ -421,6 +421,9 @@ button:hover {
 #work-description-one {
     grid-area: 5 / 2 / span 1 / span 3;
     line-height: 1.7em;
+    padding: 6px 12px;
+    background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC;
 }
 
 /* WORK IMAGE 2 */
@@ -439,6 +442,60 @@ button:hover {
 #work-description-two {
     grid-area: 8 / 2 / span 1 / span 3;
     line-height: 1.7em;
+    padding: 6px 12px;
+    background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC;
+}
+
+/* WORK MEDIA QUERIES */
+@media (min-width: 600px) {
+    #work-intro {
+      font-size: 20px;  
+    }
+    #work-description-one {
+        font-size: 19px;
+    }
+    #work-description-two {
+        font-size: 19px;
+    }
+}
+@media (min-width: 900px) {
+    #work-image-work-one {
+        grid-area: 3 / 2 / span 1 / span 1;
+    }
+    #work-image-work-two {
+        grid-area: 3 / 4 / span 1 / span 1;
+    }
+    #work-image-work-two-github {
+        grid-area: 4 / 4 / span 1 / span 3;
+    }
+    #work-description-one {
+        grid-area: 5 / 2 / span 1 / span 1;
+        align-self: flex-start;  
+    }
+    #work-description-two {
+        grid-area: 5 / 4 / span 1 / span 1;
+        align-self: flex-start;
+    }
+}
+@media (min-width: 1200px) {
+    #work-heading {
+        font-size: 60px;
+        padding: 12px 0;
+    }
+    #work-intro {
+        font-size: 24px;
+        padding: 12px 32px;
+    }
+    #work-image-work-one-github button {
+        font-size: 24px;
+    } 
+    #work-image-work-two-github button {
+        font-size: 24px;
+    } 
+    #work-description-one, #work-description-two {
+        font-size: 23px;
+    }
 }
 
 /* ABOUT ME STYLES */
@@ -590,6 +647,9 @@ button:hover {
     }
 }
 @media (min-width: 1200px) {
+    #contact-container {
+        grid-template-rows: repeat(5, auto);
+    }
     #contact-heading {
         font-size: 60px;
         padding: 12px 0;
