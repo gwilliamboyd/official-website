@@ -580,7 +580,7 @@ button:hover {
     flex-direction: row;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 12px;
+    gap: 20px;
 }
 #skills-icons img {
     width: 80px;
@@ -646,13 +646,12 @@ button:hover {
         grid-area: 1 / 2 / span 1 / span 1;
     }
     #skills-icons {
-        max-width: 100%;
+        max-width: 90%;
         align-self: flex-start;
         grid-area: 2 / 2 / span 2 / span 1;
     }
     #skills-icons img {
-        width: 17
-        0px;
+        width: 150px;
     }
     #bio-heading {
         grid-area: 1 / 4 / span 1 / span 1; 
