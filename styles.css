@@ -23,8 +23,8 @@ img {
 }
 
 button {
-    margin-left: 0.5em;
     padding: 12px 20px;
+    font-family: inherit;
     font-size: 16px;
     font-weight: 600;
     color: #ECECEC;
@@ -63,6 +63,7 @@ button:hover {
 #mobile-menu-icon img {
     width: 45px;
     display: block;
+    border: 0;
 }
 
 #mobile-menu-links {
@@ -150,7 +151,7 @@ button:hover {
     min-width: 100%;
     max-width: 100%;
     height: 100%;
-    padding-top: 12px;    
+    padding: 12px 0;    
 }
 
 #bio-container-home {
@@ -158,8 +159,8 @@ button:hover {
     display: grid;
     max-width: 100%;
     grid-template-columns: 11.5% 36% 6% 36% 11.5%;
-    grid-template-rows: repeat(8, auto);
-    row-gap: 12px;
+    grid-template-rows: repeat(11, auto);
+    row-gap: 24px;
     align-items: center;
 }
 
@@ -186,9 +187,20 @@ button:hover {
     align-self: center;
 }
 
+#home-cta {
+    padding: 4px 12px;
+    max-width: fit-content;
+    font-size: 14px;
+    text-align: center;
+    justify-self: center;
+    background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC;
+    grid-area: 7 / 2 / span 1 / span 3;
+}
+
 #work-image-home-one {
     max-width: 100%;
-    grid-area: 7 / 2 / span 1 / span 3;
+    grid-area: 8 / 2 / span 1 / span 3;
 }
 /* constrain image size to anchor */
 #work-image-home-one img {
@@ -197,7 +209,7 @@ button:hover {
 
 #work-image-home-two {
     max-width: 100%;
-    grid-area: 9 / 2 / span 1 / span 3;
+    grid-area: 10 / 2 / span 1 / span 3;
 }
 /* constrain image size to anchor */
 #work-image-home-two img {
@@ -205,14 +217,12 @@ button:hover {
 }
 
 #work-image-home-one-github {
-    grid-area: 8 / 2 / span 1 / span 1;
+    grid-area: 9 / 2 / span 1 / span 3;
     font-size: 12px;
-    align-self: flex-end;
 }
 #work-image-home-two-github {
-    grid-area: 10 / 2 / span 1 / span 1;
+    grid-area: 11 / 2 / span 1 / span 3;
     font-size: 12px;
-    align-self: flex-end;
 }
 
 /* #my-work-text-home {
@@ -246,7 +256,7 @@ button:hover {
     }
 
     #bio-text-home {
-        font-size: 23px;
+        font-size: 22px;
         grid-area: 1 / 4 / span 2 / span 1;
         line-height: 1.3em;
     }
@@ -262,11 +272,11 @@ button:hover {
     #work-image-home-two {
         grid-area: 4 / 4 / span 1 / span 1;
     }
-
-    #my-work-text-home {
-        font-size: 24px;
-        grid-area: 5 / 2 / span 1 / span 3;
-    
+    #work-image-home-one-github {
+        grid-area: 5 / 2 / span 1 / span 1;
+    }
+    #work-image-home-two-github {
+        grid-area: 5 / 4 / span 1 / span 1;
     }
 
     #mobile-menu-icon {
@@ -348,15 +358,7 @@ button:hover {
     }
 
     #work-image-home-one, #work-image-home-two {
-        width: 80%;
-    }
-
-    #work-image-home-one {
-        justify-self: end;
-    }
-
-    #work-image-home-two {
-        justify-self: start;
+        width: 100%;
     }
 }
 
@@ -381,16 +383,22 @@ button:hover {
     align-items: center;
 }
 
-#my-work-work {
+#work-heading {
     font-size: 42px;
     font-weight: 300;
     text-align: center;
-    grid-area: 1 / 2 / span 1 / span 3;
+    align-self: center;
+    padding: 4px 0;
+    grid-area: 1 / 1 / span 1 / span 6;
+    background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC;
 }
 
 #work-intro {
     padding: 4px 12px;
     text-align: center;
+    max-width: fit-content;
+    justify-self: center;
     grid-area: 2 / 2 / span 1 / span 3; 
     line-height: 1.5em;
     background-color: rgba(18, 18, 18, 0.5);
@@ -461,7 +469,11 @@ button:hover {
 #skills-heading {
     font-size: 42px;
     text-align: center;
-    grid-area: 1 / 2 / span 1 / span 4;
+    align-self: center;
+    padding: 4px 0;
+    grid-area: 1 / 1 / span 1 / span 6;
+    background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC;
 }
 
 #skills-icons {
@@ -476,12 +488,17 @@ button:hover {
 }
 #skills-icons img {
     width: 80px;
+    border: 0;
 }
 
 #bio-heading {
     font-size: 42px;
     text-align: center;
-    grid-area: 3 / 2 / span 1 / span 4;
+    align-self: center;
+    padding: 4px 0;
+    grid-area: 3 / 1 / span 1 / span 6;
+    background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC;
 }
 
 #bio-container-about-me #tall-guitar {
@@ -492,6 +509,9 @@ button:hover {
 #bio-personal {
     grid-area: 5 / 2 / span 1 / span 4;
     line-height: 1.8em;
+    background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC;
+    padding: 6px 12px;
 }
 
 /* CONTACT STYLES */
@@ -508,7 +528,7 @@ button:hover {
     padding: 0;
     display: grid;
     max-width: 100%;
-    grid-template-columns: 12% 19% 19% 19% 19% 12%;
+    grid-template-columns: 11.5% 36% 6% 36% 11.5%;
     grid-template-rows: repeat(8, auto);
     row-gap: 24px;
     align-items: center;
@@ -518,15 +538,20 @@ button:hover {
     font-size: 42px;
     font-weight: 300;
     text-align: center;
-    grid-area: 1 / 2 / span 1 / span 4;
+    padding: 4px 0;
+    align-self: center;
+    grid-area: 1 / 1 / span 1 / span 5;
+    background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC;
 }
 
 #contact-cta {
-    grid-area: 2 / 2 / span 1 / span 4;
+    grid-area: 2 / 2 / span 1 / span 3;
+    font-size: 20px;
 }
 
 #contact-links {
-    grid-area: 3 / 2 / span 1 / span 4;
+    grid-area: 3 / 2 / span 1 / span 3;
 }
 #contact-links button {
     margin: 14px 0;
@@ -534,68 +559,53 @@ button:hover {
 
 #contact-photo {
     max-width: 100%;
-    grid-area: 4 / 2 / span 1 / span 4;
+    grid-area: 4 / 2 / span 1 / span 3;
 }
 #contact-photo img {
     max-width: 100%;
 }
 
-/* Contact Form styles
+/* CONTACT MEDIA QUERIES */
 
-form {
-    width: 600px;
-    padding: 1em;
-    border: 1px solid #ECECEC;
-    border-radius: 0.2em;
-    background-color: #121212;
+@media (min-width: 600px) {
+    #contact-cta {
+        font-size: 24px;
+        line-height: 1.3em;
+        justify-items: center;
+    }
 }
-#contact-form ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+@media (min-width: 900px) {
+    #contact-container {
+        grid-template-rows: repeat(5, auto);
+        margin-bottom: 0;
+    }    
+    #contact-cta {
+        grid-area: 2 / 2 / span 1 / span 1;
+    }
+    #contact-links {
+        grid-area: 3 / 2 / span 1 / span 1;
+    }    
+    #contact-photo {
+        grid-area: 2 / 4 / span 2 / span 1;
+    }
 }
-#contact-form li + li {
-    margin-top: 2em;
+@media (min-width: 1200px) {
+    #contact-heading {
+        font-size: 60px;
+        padding: 12px 0;
+    }
+    #contact-cta {
+        grid-area: 2 / 2 / span 1 / span 1;
+        align-self: flex-start;
+        padding-top: 36px;
+    }
+    #contact-links {
+        grid-area: 3 / 2 / span 1 / span 1;
+        align-self: flex-start;
+    }
+    #contact-photo {
+        max-width: 60%;
+        align-self: flex-start;
+        grid-area: 2 / 3 / span 3 / span 2;
+    }
 }
-label {
-    display: inline-block;
-    width: 120px;
-    text-align: right;
-    padding-right: 12px;
-    font-size: 18px;
-  }
-
-input,
-textarea {
-  font: 1em sans-serif;
-  padding: 4px 0;
-  width: 450px;
-  box-sizing: border-box;
-  border: 1px solid #ECECEC;
-}
-input:focus,
-textarea:focus {
-  border-color: #000;
-}
-textarea {
-  vertical-align: top;
-  height: 8em;
-}
-lines button up with text fields 
-.button {
-  padding-left: 132px;
-}
-button {
-  margin-left: 0.5em;
-  padding: 12px 20px;
-  font-size: 16px;
-  font-weight: 600;
-  color: #ECECEC;
-  background-color: #121212;
-  border: 1px solid #ECECEC;
-}
-button:hover {
-    color: #121212;
-    background-color: #ECECEC;
-    border: 1px solid #121212;
-} */
