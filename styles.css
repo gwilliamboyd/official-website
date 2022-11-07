@@ -27,15 +27,16 @@ button {
     font-family: inherit;
     font-size: 16px;
     font-weight: 600;
-    color: #ECECEC;
-    background-color: #121212;
-    border: 1px solid #ECECEC;
+    color: #121212;
+    background-color: #178FB2;
+    border: 1px solid #121212;
+    border-radius: 3px;
 }
 
 button:hover {
-    color: #021318;
-    background-color: #ECECEC;
-    border: 1px solid #121212;
+    color: #ECECEC;
+    background-color: #121212;
+    border: 1px solid #ECECEC;
 }
 
 /* HEADER STYLES */
@@ -151,7 +152,8 @@ button:hover {
 }
 
 #nav-bar-ul span:hover {
-    background-color: #323232;
+    /* background-color: #323232; */
+    color: #178FB2;
 }
 
 #nav-bar-ul img {
@@ -191,8 +193,8 @@ button:hover {
     font-size: 14px; 
     max-width: 100%;
     align-self: start;
-    background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC;
+    /* background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC; */
     grid-area: 4 / 2 / span 2 / span 3;
 }
 
@@ -210,8 +212,8 @@ button:hover {
     font-size: 14px;
     text-align: center;
     justify-self: center;
-    background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC;
+    /* background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC; */
     grid-area: 7 / 2 / span 1 / span 3;
 }
 
@@ -429,8 +431,8 @@ button:hover {
     padding: 4px 0;
     max-width: 100%;
     grid-area: 1 / 1 / span 1 / span 6;
-    background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC;
+    /* background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC; */
 }
 
 #work-intro {
@@ -440,8 +442,8 @@ button:hover {
     justify-self: center;
     grid-area: 2 / 2 / span 1 / span 3; 
     line-height: 1.5em;
-    background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC;
+    /* background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC; */
 }
 
 /* WORK IMAGE 1 */
@@ -461,8 +463,8 @@ button:hover {
     grid-area: 5 / 2 / span 1 / span 3;
     line-height: 1.7em;
     padding: 6px 12px;
-    background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC;
+    /* background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC; */
 }
 
 /* WORK IMAGE 2 */
@@ -482,8 +484,8 @@ button:hover {
     grid-area: 8 / 2 / span 1 / span 3;
     line-height: 1.7em;
     padding: 6px 12px;
-    background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC;
+    /* background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC; */
 }
 
 /* WORK MEDIA QUERIES */
@@ -568,8 +570,8 @@ button:hover {
     max-width: 100%;
     padding: 4px 0;
     grid-area: 1 / 1 / span 1 / span 6;
-    background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC;
+    /* background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC; */
 }
 
 #skills-icons {
@@ -594,8 +596,8 @@ button:hover {
     padding: 4px 0;
     max-width: 100%;
     grid-area: 3 / 1 / span 1 / span 6;
-    background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC;
+    /* background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC; */
 }
 
 #bio-container-about-me #tall-guitar {
@@ -606,8 +608,8 @@ button:hover {
 #bio-personal {
     grid-area: 5 / 2 / span 1 / span 4;
     line-height: 1.8em;
-    background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC;
+    /* background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC; */
     padding: 6px 12px;
 }
 
@@ -693,8 +695,8 @@ button:hover {
     padding: 4px 0;
     align-self: center;
     grid-area: 1 / 1 / span 1 / span 6;
-    background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC;
+    /* background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC; */
 }
 
 #contact-cta {
