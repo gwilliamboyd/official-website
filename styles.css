@@ -34,9 +34,9 @@ button {
 }
 
 button:hover {
-    color: #ECECEC;
+    color: #178FB2;
     background-color: #121212;
-    border: 1px solid #ECECEC;
+    border: 1px solid #178FB2;
 }
 
 /* HEADER STYLES */
