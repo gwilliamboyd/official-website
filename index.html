@@ -20,9 +20,9 @@
                 <ul>
                     <!-- Page links -->
                     <li><a href="index.html"><span>Home</span></a></li>
-                    <li><a href="work.html"><span>Work</span></a></li>
-                    <li><a href="about-me.html"><span>About Me</span></a></li>
-                    <li><a href="contact.html"><span>Contact</span></a></li>
+                    <li><a onclick="scrollWork()"><span>Work</span></a></li>
+                    <li><a onclick="scrollAboutMe()"><span>About Me</span></a></li>
+                    <li><a onclick="scrollContact()"><span>Contact</span></a></li>
                     <!-- Social media links -->
                     <li><a href="https://www.linkedin.com/in/gwilliamboyd" target="_blank">
                         <img src="https://i.ibb.co/ggZFwt2/linkedin-icon.png" alt="LinkedIn" 
@@ -105,7 +105,143 @@
             </div>                
         </div>
     </div>
-    
+    <!-- WORK - Body -->
+    <div id="body-work">
+        <div id="container-work">            
+            <div id="heading-work">My Work</div>
+            <!-- Work description -->
+            <div id="work-intro">
+                All HTML email templates are coded and designed 
+                by me from scratch! <br><br>
+                Click each picture to see a full preview!
+            </div>
+            <!-- Compilr Image -->
+            <a id="work-one-image" 
+                href="https://gwilliamboyd.github.io/web-dev-email/" 
+                target="_blank">
+                <img src="https://i.ibb.co/vJx9b2m/compilr-preview.jpg">
+            </a>
+            <!-- Compilr Github link -->
+            <div id="work-one-github">
+                <button>
+                    <a href="https://github.com/gwilliamboyd/web-dev-email" 
+                        target="_blank">Source Code - Github
+                    </a>
+                </button>
+            </div>
+            <!-- Compilr description -->
+            <div id="work-one-description">
+                This email is an advertisement for a hypothetical 
+                Squarespace-like in-browser website creator.  
+            </div> 
+            <!-- GuitHub Image -->
+            <a id="work-two-image" 
+                href="https://gwilliamboyd.github.io/guitar-store-email" 
+                target="_blank">
+                <img src="https://i.ibb.co/3yvyzhc/guithub-preview.jpg">
+            </a> 
+            <!-- GuitHub Github link - man that's confusing! -->
+            <div id="work-two-github">
+                <button>
+                    <a href="https://github.com/gwilliamboyd/guitar-store-email" 
+                    target="_blank">Source Code - Github</a>
+                </button>
+            </div>
+            <!-- GuitHub description -->
+            <div id="work-two-description">
+                This one is for a hypothetical online guitar retailer! I 
+                envisioned this campaign as a sort of monthly newsletter advertising 
+                some of their best-selling gear. <br>
+                <em>All photos for this template were taken by Eddie's Guitar 
+                    Store in St. Louis, MO.</em> 
+            </div>                 
+        </div>
+    </div>
+    <!-- ABOUT ME - Body -->
+    <div id="body-about-me">
+        <div id="container-about-me">
+            <div id="skills-heading">
+                Skills
+            </div>
+            <!-- Skills - icons -->
+            <div id="skills-icons">
+                <div id="skill-icon-one">
+                    <img src="https://i.ibb.co/mShJWrs/html5-icon.png" alt="HTML 5">
+                </div>
+                <div id="skill-icon-two">
+                    <img src="https://i.ibb.co/dmTHBZh/css-icon.png" alt="CSS 3">
+                </div>
+                <div id="skill-icon-three">
+                    <img src="https://i.ibb.co/TT4h7hx/js-icon.png" alt="Javascript">
+                </div>
+                <div id="skill-icon-four">
+                    <img src="https://i.ibb.co/v4BpLGD/git-icon.png" alt="Git">
+                </div>
+                <div id="skill-icon-five">
+                    <img src="https://i.ibb.co/bvw0g3F/ps-icon.png" alt="Photoshop">
+                </div>
+                <div id="skill-icon-six">
+                    <img src="https://i.ibb.co/7VZQpTm/ai-icon.png" alt="Illustrator">
+                </div>
+                <div id="skill-icon-seven">
+                    <img src="https://i.ibb.co/rpjJ4gY/id-icon.png" alt="InDesign">
+                </div>
+                <div id="skill-icon-eight">
+                    <img src="https://i.ibb.co/5kfzJh6/figma-icon.png" alt="Figma">
+                </div>
+                <div id="skill-icon-nine">
+                    <img src="https://i.ibb.co/DtC9jyD/blender-icon.png" alt="Blender">
+                </div>
+            </div>
+            <!-- BIO -->
+            <div id="bio-heading">
+                Bio
+            </div>
+            <img id="tall-guitar" src="https://i.ibb.co/183qfD3/les-paul-med.jpg" 
+            alt="Guitar performance">
+            <!-- BIO - paragraph text -->
+            <div id="bio-personal">
+                I have also been a professional musician for 18 years, playing guitar, singing 
+                and writing songs for both myself and other artists! I have also been a private 
+                guitar teacher for more than 10 years! <br><br>
+                Most recently I have also worked as a 3D animator and character rigger for video games. <br><br>
+                When I'm not developing, I enjoy spending time with my friends, reading or watching 
+                Lord of the Rings, or cheering on my Dallas Stars!  
+            </div>                         
+        </div>
+    </div>
+    <!-- CONTACT - Body -->
+    <div id="body-contact">
+        <div id="container-contact">
+            <div id="contact-heading">
+                Let's Connect!
+            </div>
+            <!-- Contact CTA -->
+            <div id="contact-cta">
+                I would love to chat about your next project! <br> 
+                Feel free to reach out anytime!
+            </div>
+            <!-- Contact buttons -->
+            <div id="contact-links">
+                <!-- Email -->
+                <button>
+                    <a href="mailto: gwillboyd@gmail.com">
+                        Email me at gwillboyd@gmail.com
+                    </a>
+                </button>
+                <!-- LinkedIn -->
+                <button>
+                    <a href="https://www.linkedin.com/gwilliamboyd">
+                        Connect on LinkedIn
+                    </a>
+                </button>
+            </div>
+            <!-- Contact photo -->
+            <div id="contact-photo">
+                <img src="https://i.ibb.co/Mp74Tky/strat-tall.jpg" alt="Self portrait 2">
+            </div>
+        </div>
+    </div>
     <!-- FOOTER -->
     <div class="footer">
         <div>Site developed by: G William Boyd</div>

@@ -2,6 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
 
 /* MASTER STYLES */
+html {
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
@@ -654,7 +657,7 @@ button:hover {
         grid-area: 2 / 2 / span 2 / span 1;
     }
     #skills-icons img {
-        width: 150px;
+        width: 120px;
     }
     #bio-heading {
         grid-area: 1 / 4 / span 1 / span 1; 
