@@ -23,6 +23,16 @@ mobileMenu.addEventListener("click", () => {
     console.log(window.screenY);
   } */
 
+  // Scroll down home page - offset by nav bar height
+  /* const navbar = document.getElementById('#nav-bar');
+  let navbarHeight = navbar.offsetHeight;
+  let navbarWidth = navbar.offsetWidth;
+  console.log(navbarHeight);
+  console.log(navbarWidth);
+
+  let domRect = navbar.getBoundingClientRect();
+  console.log(domRect);
+ */
   function scrollHome(){
     window.scrollTo(0, 0);
   }
