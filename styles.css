@@ -23,9 +23,9 @@ img {
 }
 
 button {
-    padding: 12px 20px;
+    padding: 0.75rem 1.25rem;
     font-family: inherit;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
     color: #121212;
     background-color: #178FB2;
@@ -189,7 +189,7 @@ button:hover {
 }
 
 #bio-text-home {
-    padding: 8px 16px;
+    padding: 0.5rem 1rem;
     font-size: 14px; 
     max-width: 100%;
     align-self: start;
@@ -457,7 +457,7 @@ button:hover {
 }
 #work-image-work-one-github {
     grid-area: 4 / 2 / span 1 / span 3;
-    font-size: 16px;
+    font-size: 1rem;
 }
 #work-description-one {
     grid-area: 5 / 2 / span 1 / span 3;
@@ -478,7 +478,7 @@ button:hover {
 }
 #work-image-work-two-github {
     grid-area: 7 / 2 / span 1 / span 3;
-    font-size: 16px;
+    font-size: 1rem;
 }
 #work-description-two {
     grid-area: 8 / 2 / span 1 / span 3;
