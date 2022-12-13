@@ -23,6 +23,10 @@ mobileMenu.addEventListener("click", () => {
     console.log(window.screenY);
   } */
 
+  function scrollHome(){
+    window.scrollTo(0, 0);
+  }
+
 function scrollWork(){
     const workBody = document.getElementById('body-work');
     let headerOffset = 80;

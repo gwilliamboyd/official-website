@@ -19,7 +19,7 @@
             <div id="nav-bar-ul">
                 <ul>
                     <!-- Page links -->
-                    <li><a href="index.html"><span>Home</span></a></li>
+                    <li><a onclick="scrollHome()"><span>Home</span></a></li>
                     <li><a onclick="scrollWork()"><span>Work</span></a></li>
                     <li><a onclick="scrollAboutMe()"><span>About Me</span></a></li>
                     <li><a onclick="scrollContact()"><span>Contact</span></a></li>
@@ -44,10 +44,13 @@
         <div id="mobile-menu-ul">
             <ul>
                 <!-- Page links -->
-                <li><a href="index.html"><span>Home</span></a></li>
-                <li><a href="work.html"><span>Work</span></a></li>
-                <li><a href="about-me.html"><span>About Me</span></a></li>
-                <li><a href="contact.html"><span>Contact</span></a></li>
+                <li><a onclick="scrollHome()"><span>Home</span></a></li>
+                <li><a onclick="scrollWork()"><span>Work</span></a></li>
+                <!-- Set value of 'onclick' attribute to different aboutMe scroll function 
+                in CSS. If it sets the value to the other function, that could help to 
+                change the scroll offset. -->
+                <li><a onclick="scrollAboutMe()"><span>About Me</span></a></li>
+                <li><a onclick="scrollContact()"><span>Contact</span></a></li>
                 <!-- Social media links -->
                 <li><a href="https://www.linkedin.com/in/gwilliamboyd" target="_blank">
                     <img src="https://i.ibb.co/ggZFwt2/linkedin-icon.png" alt="LinkedIn" 
@@ -73,36 +76,7 @@
                 develop your campaigns and email templates from scratch utilizing 
                 <strong>HTML</strong> and <strong>CSS</strong>, and create graphics 
                 using <strong>Photoshop</strong> and <strong>Illustrator</strong>.
-            </div>
-            <!-- WORK display - home -->
-            <div id="my-work-home">My Work</div>
-            <div id="home-cta">Click each image to see a full preview!</div>
-            <!-- Compilr image -->
-            <a id="work-image-home-one" href="https://gwilliamboyd.github.io/web-dev-email/" 
-            target="_blank">
-                <img src="https://i.ibb.co/vJx9b2m/compilr-preview.jpg">
-            </a>
-            <!-- GuitHub image  -->
-            <a id="work-image-home-two" href="https://gwilliamboyd.github.io/guitar-store-email" 
-            target="_blank">
-                <img src="https://i.ibb.co/3yvyzhc/guithub-preview.jpg">
-            </a>
-            <!-- Compilr button -->
-            <div id="work-image-home-one-github">
-                <button>
-                    <a href="https://github.com/gwilliamboyd/web-dev-email" 
-                        target="_blank">Source Code - Github
-                    </a>
-                </button>
-            </div>
-            <!-- GuitHub button -->
-            <div id="work-image-home-two-github">
-                <button>
-                    <a href="https://github.com/gwilliamboyd/guitar-store-email" 
-                        target="_blank">Source Code - Github
-                    </a>
-                </button>
-            </div>                
+            </div>                            
         </div>
     </div>
     <!-- WORK - Body -->
