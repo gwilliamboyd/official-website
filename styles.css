@@ -51,6 +51,7 @@ button:hover {
     position: sticky;
     top: 0;
     border-bottom: 1px solid #ECECEC;
+    font-weight: 200;
 }
 
 /* FOOTER STYLES */
@@ -71,7 +72,7 @@ button:hover {
 
 #logo-main {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 200;
     min-width: fit-content;
 }
 
@@ -93,7 +94,7 @@ button:hover {
    text-align: right;
    position: sticky;
    top: 0;
-   background-color: rgba(18, 18, 18, 0.5);
+   background-color: rgba(18, 18, 18, 0.7);
 }
 
 #mobile-menu-ul ul {
@@ -120,7 +121,7 @@ button:hover {
 
 #logo-main {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 200;
     min-width: fit-content;
 }
 
@@ -173,7 +174,7 @@ button:hover {
     padding: 12px 0;    
 }
 
-#bio-container-home {
+#container-home {
     padding: 0;
     display: grid;
     max-width: 100%;
@@ -183,7 +184,7 @@ button:hover {
     align-items: center;
 }
 
-#bio-container-home #tall-portrait {
+#container-home #tall-portrait {
     max-width: 100%;
     grid-area: 1 / 2 / span 3 / span 3;
 }
@@ -268,13 +269,13 @@ button:hover {
     /* - widens wide columns, narrows middle column
        - only 5 rows are being used in tablet layout, 
          so last 3 rows have been removed */ 
-    #bio-container-home {
+    #container-home {
         grid-template-columns: 9% 40% 3% 40% 9%;
         grid-template-rows: repeat(6, auto);
         row-gap: 24px;
     }
 
-    #bio-container-home #tall-portrait {
+    #container-home #tall-portrait {
         grid-area: 1 / 2 / span 2 / span 1;
     }
 
@@ -329,14 +330,14 @@ button:hover {
         font-size: 12px;
     }
     
-    #bio-container-home {
+    #container-home {
         grid-template-columns: 9% 40% 3% 40% 9%;
         grid-template-rows: repeat(5, auto);
         height: auto;
         row-gap: 12px;
     }
 
-    #bio-container-home #tall-portrait {
+    #container-home #tall-portrait {
         max-width: 75%;
         justify-self: center;
         grid-area: 1 / 2 / span 2 / span 1;
@@ -361,7 +362,7 @@ button:hover {
         font-size: 14px;
     }
 
-    #bio-container-home {
+    #container-home {
         row-gap: 40px;
     }
 
@@ -386,7 +387,7 @@ button:hover {
         padding: 12px 24px;
     }
 
-    #bio-container-home #tall-portrait {
+    #container-home #tall-portrait {
         max-width: 60%;
     }
 
@@ -413,7 +414,7 @@ button:hover {
     padding: 12px 0;    
 }
 
-#bio-container-work {
+#container-work {
     padding: 0;
     display: grid;
     max-width: 100%;
@@ -423,7 +424,7 @@ button:hover {
     align-items: center;
 }
 
-#work-heading {
+#heading-work {
     font-size: 42px;
     font-weight: 300;
     text-align: center;
@@ -447,19 +448,19 @@ button:hover {
 }
 
 /* WORK IMAGE 1 */
-#work-image-work-one {
+#work-one-image {
     max-width: 100%;
     grid-area: 3 / 2 / span 1 / span 3;
 }
 /* constrain image size to anchor */
-#work-image-work-one img {
+#work-one-image img {
     width: 100%;
 }
-#work-image-work-one-github {
+#work-one-github {
     grid-area: 4 / 2 / span 1 / span 3;
     font-size: 1rem;
 }
-#work-description-one {
+#work-one-description {
     grid-area: 5 / 2 / span 1 / span 3;
     line-height: 1.7em;
     padding: 6px 12px;
@@ -468,19 +469,19 @@ button:hover {
 }
 
 /* WORK IMAGE 2 */
-#work-image-work-two {
+#work-two-image {
     max-width: 100%;
     grid-area: 6 / 2 / span 1 / span 3;
 }
 /* constrain image size to anchor */
-#work-image-work-two img {
+#work-two-image img {
     width: 100%;
 }
-#work-image-work-two-github {
+#work-two-github {
     grid-area: 7 / 2 / span 1 / span 3;
     font-size: 1rem;
 }
-#work-description-two {
+#work-two-description {
     grid-area: 8 / 2 / span 1 / span 3;
     line-height: 1.7em;
     padding: 6px 12px;
@@ -493,34 +494,34 @@ button:hover {
     #work-intro {
       font-size: 20px;  
     }
-    #work-description-one {
+    #work-one-description {
         font-size: 19px;
     }
-    #work-description-two {
+    #work-two-description {
         font-size: 19px;
     }
 }
 @media (min-width: 900px) {
-    #work-image-work-one {
+    #work-one-image {
         grid-area: 3 / 2 / span 1 / span 1;
     }
-    #work-image-work-two {
+    #work-two-image {
         grid-area: 3 / 4 / span 1 / span 1;
     }
-    #work-image-work-two-github {
+    #work-two-github {
         grid-area: 4 / 4 / span 1 / span 3;
     }
-    #work-description-one {
+    #work-one-description {
         grid-area: 5 / 2 / span 1 / span 1;
         align-self: flex-start;  
     }
-    #work-description-two {
+    #work-two-description {
         grid-area: 5 / 4 / span 1 / span 1;
         align-self: flex-start;
     }
 }
 @media (min-width: 1200px) {
-    #work-heading {
+    #heading-work {
         font-size: 60px;
         padding: 12px 0;
     }
@@ -528,13 +529,13 @@ button:hover {
         font-size: 24px;
         padding: 12px 32px;
     }
-    #work-image-work-one-github button {
+    #work-one-github button {
         font-size: 24px;
     } 
-    #work-image-work-two-github button {
+    #work-two-github button {
         font-size: 24px;
     } 
-    #work-description-one, #work-description-two {
+    #work-one-description, #work-two-description {
         font-size: 23px;
     }
 }
@@ -548,7 +549,7 @@ button:hover {
     padding-top: 24px;    
 }
 
-#bio-container-about-me {
+#container-about-me {
     padding: 0;
     display: grid;
     max-width: 100%;
@@ -558,7 +559,7 @@ button:hover {
     align-items: center;
 }
 
-#bio-container-about-me #tall-portrait {
+#container-about-me #tall-portrait {
     max-width: 100%;
     grid-area: 1 / 2 / span 3 / span 4;
 }
@@ -600,7 +601,7 @@ button:hover {
     border: 1px solid #ECECEC; */
 }
 
-#bio-container-about-me #tall-guitar {
+#container-about-me #tall-guitar {
     max-width: 100%;
     grid-area: 4 / 2 / span 1 / span 4;
 }
@@ -630,7 +631,7 @@ button:hover {
     #skills-icons img {
         width: 100px;
     }
-    #bio-container-about-me #tall-guitar {
+    #container-about-me #tall-guitar {
         max-width: 60%;
         justify-self: center;
     }
@@ -640,7 +641,7 @@ button:hover {
     }
 }
 @media (min-width: 1200px) {
-    #bio-container-about-me {
+    #container-about-me {
         grid-template-columns: 11.5% 36% 6% 36% 11.5%; 
     }
     
@@ -658,7 +659,7 @@ button:hover {
     #bio-heading {
         grid-area: 1 / 4 / span 1 / span 1; 
     }
-    #bio-container-about-me #tall-guitar {
+    #container-about-me #tall-guitar {
         grid-area: 2 / 4 / span 1 / span 1;
     }
     #bio-personal {
@@ -677,7 +678,7 @@ button:hover {
     padding-top: 24px;    
 }
 
-#contact-container {
+#container-contact {
     padding: 0;
     margin: 0;
     display: grid;
@@ -729,7 +730,7 @@ button:hover {
     }
 }
 @media (min-width: 900px) {
-    #contact-container {
+    #container-contact {
         grid-template-rows: repeat(5, auto);
         margin-bottom: 0;
     }
@@ -747,7 +748,7 @@ button:hover {
     }
 }
 @media (min-width: 1200px) {
-    #contact-container {
+    #container-contact {
         grid-template-rows: repeat(5, auto);
     }
     #contact-heading {
