@@ -17,6 +17,7 @@ body {
 }
 
 a {
+    display: inline-block;
     text-decoration: none;
     color: inherit;
 }
@@ -72,6 +73,9 @@ button:hover {
     top: 0;
     border-bottom: 1px solid #ECECEC;
     font-weight: 200;
+    /* z-index ensures position: absolute elements won't display 
+    over the top of the nav-bar */
+    z-index: 100;
 }
 
 /* FOOTER STYLES */
@@ -115,6 +119,9 @@ button:hover {
    position: sticky;
    top: 58px;
    background-color: rgba(18, 18, 18, 0.7);
+   /* z-index ensures position: absolute elements won't display 
+    over the top of the nav-bar */
+    z-index: 100;
 }
 
 #mobile-menu-ul ul {
@@ -443,7 +450,7 @@ button:hover {
     padding: 0;
     display: grid;
     max-width: 100%;
-    grid-template-columns: 11.5% 23% 3% 23% 3% 23% 11.5%;
+    grid-template-columns: 8.5% 25% 3% 25% 3% 25% 8.5%;
     grid-template-rows: repeat(5, auto);
     row-gap: 28px;
     align-items: center;
@@ -494,16 +501,16 @@ button:hover {
     line-height: 1.7em;
     padding: 6px 12px;
     position: absolute;
-    top: 50;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(29, 106, 154, 0.72);
+    background: rgba(18, 18, 18, 0.8);
     color: #fff;
     visibility: hidden;
     opacity: 0;
     /* transition effect. not necessary */
-    transition: opacity .2s, visibility .2s;
+    transition: opacity .3s, visibility .3s;
     /* background-color: rgba(18, 18, 18, 0.5);
     border: 1px solid #ECECEC; */
 }
@@ -610,7 +617,8 @@ button:hover {
         font-size: 24px;
     } 
     #work-one-description, #work-two-description {
-        font-size: 23px;
+        font-size: 32px;
+        font-weight: 600;
     }
     #work-three-description {
         font-size: 19px;
