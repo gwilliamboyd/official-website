@@ -33,9 +33,45 @@ mobileMenu.addEventListener("click", () => {
   let domRect = navbar.getBoundingClientRect();
   console.log(domRect);
  */
-  function scrollHome(){
-    window.scrollTo(0, 0);
+
+/*   if(window.scrollY > 0) {
+    console.log('Window scrolled!');
+  } else if(window.scrollY === 0) {
+    console.log('At the top!');
   }
+  
+  console.log(window.scrollY); */
+
+ /*  document.addEventListener('DOMContentLoaded', () => {
+    console.log('DOM content is loaded');
+    
+  }); */
+
+// navbar.style.opacity = '1.0';
+
+// mobileMenu.style.color = 'red';
+// console.log(mobileMenu.style);
+userHasScrolled = false;
+window.onscroll = function ()
+{
+  //console.log(navbar.style.display);
+  //navbar.style.opacity = 1;
+  if(window.scrollY === 0) {
+    userHasScrolled = false;
+    // navbar.style.opacity = 1;
+
+  } else {
+    userHasScrolled = true;
+    // navbar.style.opacity = 0.5;
+  }
+  console.log(userHasScrolled);
+}
+console.log(userHasScrolled);
+
+
+function scrollHome(){
+  window.scrollTo(0, 0);
+}
 
 function scrollWork(){
     const workBody = document.getElementById('body-work');

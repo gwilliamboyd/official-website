@@ -34,12 +34,29 @@ button {
     background-color: #178FB2;
     border: 1px solid #121212;
     border-radius: 3px;
+    /* Transitions */
+    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    -o-transition: background-color 0.3s;
+    -moz-transition: background-color 0.3s ease;
+    /* For some reason, border transtion seems to process 
+    with the background transition.
+    Adding a border-specific transition causes both the 
+    background and color transitions to stop working. 
+    transition: border 3s ease;
+    -webkit-transition: border 3s ease;
+    -o-transition: border 3s;
+    -moz-transition: border 3s ease; */
 }
 
 button:hover {
     color: #178FB2;
     background-color: #121212;
-    border: 1px solid #178FB2;
+    border: 1px solid #178FB2;    
 }
 
 /* HEADER STYLES */
@@ -96,7 +113,7 @@ button:hover {
    width: 100%; 
    text-align: right;
    position: sticky;
-   top: 0;
+   top: 58px;
    background-color: rgba(18, 18, 18, 0.7);
 }
 
@@ -153,6 +170,11 @@ button:hover {
 
 #nav-bar-ul span {
     padding: 12px 24px;
+    transition: color 0.3s ease;
+    -webkit-transition: color 0.3s ease;
+    -o-transition: color 0.3s ease;
+    -moz-transition: color 0.3s ease;
+
 }
 
 #nav-bar-ul span:hover {
@@ -182,7 +204,7 @@ button:hover {
     display: grid;
     max-width: 100%;
     grid-template-columns: 11.5% 36% 6% 36% 11.5%;
-    grid-template-rows: repeat(11, auto);
+    grid-template-rows: repeat(2, auto);
     row-gap: 24px;
     align-items: center;
 }
@@ -288,7 +310,7 @@ button:hover {
         line-height: 1.3em;
     }
     
-    #my-work-home {
+    /* #my-work-home {
         font-size: 42px;
         grid-area: 3 / 2 / span 1 / span 3;
     }
@@ -308,7 +330,7 @@ button:hover {
     }
     #work-image-home-two-github {
         grid-area: 6 / 4 / span 1 / span 1;
-    }
+    } */
 
     #mobile-menu-icon {
         display: none;
@@ -421,8 +443,8 @@ button:hover {
     padding: 0;
     display: grid;
     max-width: 100%;
-    grid-template-columns: 11.5% 36% 3% 36% 11.5%;
-    grid-template-rows: repeat(8, auto);
+    grid-template-columns: 11.5% 23% 3% 23% 3% 23% 11.5%;
+    grid-template-rows: repeat(5, auto);
     row-gap: 28px;
     align-items: center;
 }
@@ -434,7 +456,7 @@ button:hover {
     align-self: center;
     padding: 4px 0;
     max-width: 100%;
-    grid-area: 1 / 1 / span 1 / span 6;
+    grid-area: 1 / 4 / span 1 / span 1;
     /* background-color: rgba(18, 18, 18, 0.5);
     border: 1px solid #ECECEC; */
 }
@@ -444,13 +466,17 @@ button:hover {
     text-align: center;
     max-width: fit-content;
     justify-self: center;
-    grid-area: 2 / 2 / span 1 / span 3; 
+    grid-area: 2 / 1 / span 1 / span 7; 
     line-height: 1.5em;
     /* background-color: rgba(18, 18, 18, 0.5);
     border: 1px solid #ECECEC; */
 }
 
 /* WORK IMAGE 1 */
+#work-image-one-container {
+    position: relative;
+}
+
 #work-one-image {
     max-width: 100%;
     grid-area: 3 / 2 / span 1 / span 3;
@@ -467,9 +493,24 @@ button:hover {
     grid-area: 5 / 2 / span 1 / span 3;
     line-height: 1.7em;
     padding: 6px 12px;
+    position: absolute;
+    top: 50;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(29, 106, 154, 0.72);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
     /* background-color: rgba(18, 18, 18, 0.5);
     border: 1px solid #ECECEC; */
 }
+#work-image-one-container:hover #work-one-description {
+    visibility: visible;
+    opacity: 1;
+  }
 
 /* WORK IMAGE 2 */
 #work-two-image {
@@ -492,6 +533,17 @@ button:hover {
     border: 1px solid #ECECEC; */
 }
 
+/* WORK IMAGE 3 */
+#work-three-image {
+    max-width: 100%;
+}
+#work-three-image img {
+    width: 100%;
+}
+#work-three-github {
+    grid-area: 7 / 2 / span 1 / span 3;
+}
+
 /* WORK MEDIA QUERIES */
 @media (min-width: 600px) {
     #work-intro {
@@ -505,22 +557,38 @@ button:hover {
     }
 }
 @media (min-width: 900px) {
+    #work-image-one-container {
+        grid-area: 3 / 2 / span 1 / span 1;
+        /* position: relative; */
+        width: 100%;
+        height: 100%;
+    }
     #work-one-image {
         grid-area: 3 / 2 / span 1 / span 1;
-    }
-    #work-two-image {
-        grid-area: 3 / 4 / span 1 / span 1;
-    }
-    #work-two-github {
-        grid-area: 4 / 4 / span 1 / span 3;
     }
     #work-one-description {
         grid-area: 5 / 2 / span 1 / span 1;
         align-self: flex-start;  
     }
+    #work-two-image {
+        grid-area: 3 / 4 / span 1 / span 1;
+    }
     #work-two-description {
         grid-area: 5 / 4 / span 1 / span 1;
         align-self: flex-start;
+    }
+    #work-two-github {
+        grid-area: 4 / 4 / span 1 / span 3;
+    }   
+    #work-three-image {
+        grid-area: 3 / 6 / span 1 / span 1;
+    }
+    #work-three-description {
+        grid-area: 5 / 6 / span 1 / span 1;
+        align-self: flex-start;
+    }
+    #work-three-github {
+        grid-area: 4 / 6 / span 1 / span 3;
     }
 }
 @media (min-width: 1200px) {
@@ -538,8 +606,14 @@ button:hover {
     #work-two-github button {
         font-size: 24px;
     } 
+    #work-three-github button {
+        font-size: 24px;
+    } 
     #work-one-description, #work-two-description {
         font-size: 23px;
+    }
+    #work-three-description {
+        font-size: 19px;
     }
 }
 
