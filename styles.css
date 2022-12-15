@@ -59,6 +59,9 @@ button:hover {
     background-color: #121212;
     border: 1px solid #178FB2;    
 }
+@media (hover: hover) and (pointer: fine) {
+
+  }
 
 /* HEADER STYLES */
 
@@ -435,9 +438,7 @@ button:hover {
     }
 }
 
-
 /* WORK STYLES */
-
 #body-work {
     width: 100%;
     min-width: 100%;
@@ -445,17 +446,15 @@ button:hover {
     height: 100%;
     padding: 12px 0;    
 }
-
 #container-work {
     padding: 0;
     display: grid;
     max-width: 100%;
     grid-template-columns: 8.5% 25% 3% 25% 3% 25% 8.5%;
-    grid-template-rows: repeat(5, auto);
+    grid-template-rows: repeat(12, auto);
     row-gap: 28px;
     align-items: center;
 }
-
 #heading-work {
     font-size: 42px;
     font-weight: 300;
@@ -463,11 +462,10 @@ button:hover {
     align-self: center;
     padding: 4px 0;
     max-width: 100%;
-    grid-area: 1 / 4 / span 1 / span 1;
+    grid-area: 1 / 2 / span 1 / span 5;
     /* background-color: rgba(18, 18, 18, 0.5);
     border: 1px solid #ECECEC; */
 }
-
 #work-intro {
     padding: 4px 12px;
     text-align: center;
@@ -482,22 +480,22 @@ button:hover {
 /* WORK IMAGE 1 */
 #work-image-one-container {
     position: relative;
+    grid-area: 3 / 2 / span 1 / span 5;
+    justify-self: center;
 }
-
 #work-one-image {
     max-width: 100%;
-    grid-area: 3 / 2 / span 1 / span 3;
 }
 /* constrain image size to anchor */
 #work-one-image img {
     width: 100%;
 }
-#work-one-github {
-    grid-area: 4 / 2 / span 1 / span 3;
-    font-size: 1rem;
-}
+/* #work-one-github button {
+    background-color: #1B8FE0;
+} */
+/* Desktop description */
 #work-one-description {
-    grid-area: 5 / 2 / span 1 / span 3;
+    grid-area: 3 / 2 / span 1 / span 5;
     line-height: 1.7em;
     padding: 6px 12px;
     position: absolute;
@@ -506,7 +504,7 @@ button:hover {
     left: 0;
     right: 0;
     background: rgba(18, 18, 18, 0.8);
-    color: #fff;
+    color: #ECECEC;
     visibility: hidden;
     opacity: 0;
     /* transition effect. not necessary */
@@ -517,95 +515,209 @@ button:hover {
 #work-image-one-container:hover #work-one-description {
     visibility: visible;
     opacity: 1;
-  }
+}
+/* a:visited #work-one-description {
+    visibility: hidden;
+} */
+/* Mobile description */
+#work-image-one-desc-mobile {
+    visibility: visible;
+    font-size: 1rem;
+    grid-area: 4 / 2 / span 1 / span 5;
+    justify-self: center;
+}
+#work-one-github {
+    grid-area: 5 / 2 / span 1 / span 5;
+    font-size: 1rem;
+    justify-self: center;
+}
 
 /* WORK IMAGE 2 */
+#work-image-two-container {
+    position: relative;
+    grid-area: 6 / 2 / span 1 / span 5;
+    justify-self: center;
+}
 #work-two-image {
     max-width: 100%;
-    grid-area: 6 / 2 / span 1 / span 3;
 }
 /* constrain image size to anchor */
 #work-two-image img {
     width: 100%;
 }
-#work-two-github {
-    grid-area: 7 / 2 / span 1 / span 3;
-    font-size: 1rem;
-}
 #work-two-description {
-    grid-area: 8 / 2 / span 1 / span 3;
+    grid-area: 6 / 2 / span 1 / span 5;
     line-height: 1.7em;
     padding: 6px 12px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(18, 18, 18, 0.8);
+    color: #ECECEC;
+    visibility: hidden;
+    opacity: 0;
+    /* transition effect. not necessary */
+    transition: opacity .3s, visibility .3s;
     /* background-color: rgba(18, 18, 18, 0.5);
     border: 1px solid #ECECEC; */
 }
+#work-image-two-container:hover #work-two-description {
+    visibility: visible;
+    opacity: 1;
+}
+/* Mobile description */
+#work-image-two-desc-mobile {
+    visibility: visible;
+    font-size: 1rem;
+    grid-area: 7 / 2 / span 1 / span 5;
+    justify-self: center;
+}
+#work-two-github {
+    grid-area: 8 / 2 / span 1 / span 5;
+    font-size: 1rem;
+    justify-self: center;
+}
+/* #work-two-github button {
+    background-color: #ff6363;
+} */
+
 
 /* WORK IMAGE 3 */
+#work-image-three-container {
+    position: relative;
+    grid-area: 9 / 2 / span 1 / span 5;
+    justify-self: center;
+}
 #work-three-image {
     max-width: 100%;
 }
 #work-three-image img {
     width: 100%;
 }
-#work-three-github {
-    grid-area: 7 / 2 / span 1 / span 3;
+#work-three-description {
+    grid-area: 9 / 2 / span 1 / span 5;
+    line-height: 1.7em;
+    padding: 6px 12px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(18, 18, 18, 0.8);
+    color: #ECECEC;
+    visibility: hidden;
+    opacity: 0;
+    /* transition effect. not necessary */
+    transition: opacity .3s, visibility .3s;
+    /* background-color: rgba(18, 18, 18, 0.5);
+    border: 1px solid #ECECEC; */
 }
+#work-image-three-container:hover #work-three-description {
+    visibility: visible;
+    opacity: 1;
+}
+/* Mobile description */
+#work-image-three-desc-mobile {
+    visibility: visible;
+    font-size: 1rem;
+    grid-area: 10 / 2 / span 1 / span 5;
+    justify-self: center;
+}
+#work-three-github {
+    grid-area: 11 / 2 / span 1 / span 5;
+    justify-self: center;
+}
+/* #work-three-github button {
+    background-color: #AF1A2F;
+} */
 
 /* WORK MEDIA QUERIES */
 @media (min-width: 600px) {
+    #heading-work {
+        grid-area: 1 / 2 / span 1 / span 5;
+    }
     #work-intro {
-      font-size: 20px;  
+        grid-area: 2 / 2 / span 1 / span 5;
+        font-size: 20px;  
     }
     #work-one-description {
         font-size: 19px;
     }
-    #work-two-description {
-        font-size: 19px;
-    }
-}
-@media (min-width: 900px) {
     #work-image-one-container {
-        grid-area: 3 / 2 / span 1 / span 1;
-        /* position: relative; */
-        width: 100%;
-        height: 100%;
+        grid-area: 3 / 2 / span 1 / span 5;
     }
-    #work-one-image {
-        grid-area: 3 / 2 / span 1 / span 1;
+    #work-image-one-desc-mobile {
+        grid-area: 4 / 2 / span 1 / span 5;
     }
-    #work-one-description {
-        grid-area: 5 / 2 / span 1 / span 1;
-        align-self: flex-start;  
+    #work-one-github {
+        grid-area: 5 / 2 / span 1 / span 5;
     }
-    #work-two-image {
-        grid-area: 3 / 4 / span 1 / span 1;
+    #work-image-two-container {
+        grid-area: 6 / 2 / span 1 / span 5;
     }
-    #work-two-description {
-        grid-area: 5 / 4 / span 1 / span 1;
-        align-self: flex-start;
+    #work-image-two-desc-mobile {
+        grid-area: 7 / 2 / span 1 / span 5;
     }
     #work-two-github {
-        grid-area: 4 / 4 / span 1 / span 3;
-    }   
-    #work-three-image {
-        grid-area: 3 / 6 / span 1 / span 1;
+        grid-area: 8 / 2 / span 1 / span 5;
     }
-    #work-three-description {
-        grid-area: 5 / 6 / span 1 / span 1;
-        align-self: flex-start;
+    #work-two-description {
+        font-size: 19px;
+    }
+    #work-image-three-container {
+        grid-area: 9 / 2 / span 1 / span 5;
+    }
+    #work-image-three-desc-mobile {
+        grid-area: 10 / 2 / span 1 / span 5;
     }
     #work-three-github {
-        grid-area: 4 / 6 / span 1 / span 3;
+        grid-area: 11 / 2 / span 1 / span 5;
+    }    
+}
+@media (min-width: 900px) {
+    #container-work {
+    grid-template-rows: repeat(5, auto);
+
+    }    
+    /* Hide mobile descriptions */
+    #work-image-one-desc-mobile,
+    #work-image-two-desc-mobile,
+    #work-image-three-desc-mobile {
+        visibility: hidden;
+    }
+    #work-image-one-container {
+        grid-area: 3 / 2 / span 1 / span 1;
+    }
+    #work-one-github {
+        grid-area: 4 / 2 / span 1 / span 1;
+    }
+    #work-image-two-container {
+        grid-area: 3 / 4 / span 1 / span 1;
+    }
+    #work-two-github {
+        grid-area: 4 / 4 / span 1 / span 1;
+    }
+    #work-two-description {
+        font-size: 19px;
+    }
+    #work-image-three-container {
+        grid-area: 3 / 6 / span 1 / span 1;
+    }
+    #work-three-github {
+        grid-area: 4 / 6 / span 1 / span 1;
     }
 }
 @media (min-width: 1200px) {
     #heading-work {
         font-size: 60px;
-        padding: 12px 0;
+        /* padding: 12px 0; */
     }
     #work-intro {
         font-size: 24px;
-        padding: 12px 32px;
+        /* padding: 12px 32px; */
+        padding: 0 32px;
     }
     #work-one-github button {
         font-size: 24px;
