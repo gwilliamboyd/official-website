@@ -451,7 +451,8 @@ button:hover {
     display: grid;
     max-width: 100%;
     grid-template-columns: 8.5% 25% 3% 25% 3% 25% 8.5%;
-    grid-template-rows: repeat(12, auto);
+    grid-auto-rows: minmax(0px, auto);
+    /* grid-template-rows: repeat(12, auto); */
     row-gap: 28px;
     align-items: center;
 }
@@ -521,7 +522,7 @@ button:hover {
 } */
 /* Mobile description */
 #work-image-one-desc-mobile {
-    visibility: visible;
+    display: block;
     font-size: 1rem;
     grid-area: 4 / 2 / span 1 / span 5;
     justify-self: center;
@@ -569,7 +570,7 @@ button:hover {
 }
 /* Mobile description */
 #work-image-two-desc-mobile {
-    visibility: visible;
+    display: block;
     font-size: 1rem;
     grid-area: 7 / 2 / span 1 / span 5;
     justify-self: center;
@@ -620,7 +621,7 @@ button:hover {
 }
 /* Mobile description */
 #work-image-three-desc-mobile {
-    visibility: visible;
+    display: block;
     font-size: 1rem;
     grid-area: 10 / 2 / span 1 / span 5;
     justify-self: center;
@@ -677,15 +678,14 @@ button:hover {
     }    
 }
 @media (min-width: 900px) {
-    #container-work {
-    grid-template-rows: repeat(5, auto);
-
-    }    
+    /* #container-work {
+        grid-template-rows: repeat(5, auto);
+    }     */
     /* Hide mobile descriptions */
     #work-image-one-desc-mobile,
     #work-image-two-desc-mobile,
     #work-image-three-desc-mobile {
-        visibility: hidden;
+        display: none;
     }
     #work-image-one-container {
         grid-area: 3 / 2 / span 1 / span 1;
