@@ -54,13 +54,34 @@ button {
     -moz-transition: border 3s ease; */
 }
 
-button:hover {
-    color: #178FB2;
-    background-color: #121212;
-    border: 1px solid #178FB2;    
-}
+/* Sets :hover effects to only occur when hover capability exists
+ - therefore, hover effects will be hidden on mobile */
 @media (hover: hover) and (pointer: fine) {
-
+    button:hover {
+        color: #178FB2;
+        background-color: #121212;
+        border: 1px solid #178FB2;    
+    }
+    #mobile-menu-ul span:hover {
+        background-color: #323232;
+        color: #FFFFFF;
+    }
+    #nav-bar-ul span:hover {
+        /* background-color: #323232; */
+        color: #178FB2;
+    }
+    #work-image-one-container:hover #work-one-description {
+        visibility: visible;
+        opacity: 1;
+    }
+    #work-image-two-container:hover #work-two-description {
+        visibility: visible;
+        opacity: 1;
+    }
+    #work-image-three-container:hover #work-three-description {
+        visibility: visible;
+        opacity: 1;
+    }
   }
 
 /* HEADER STYLES */
@@ -136,10 +157,7 @@ button:hover {
     padding: 12px 24px;
 }
 
-#mobile-menu-ul span:hover {
-    background-color: #323232;
-    color: #FFFFFF;
-}
+
 
 #mobile-menu-ul img {
     width: 32px;
@@ -187,10 +205,7 @@ button:hover {
 
 }
 
-#nav-bar-ul span:hover {
-    /* background-color: #323232; */
-    color: #178FB2;
-}
+
 
 #nav-bar-ul img {
     max-width: 28px;
@@ -513,10 +528,7 @@ button:hover {
     /* background-color: rgba(18, 18, 18, 0.5);
     border: 1px solid #ECECEC; */
 }
-#work-image-one-container:hover #work-one-description {
-    visibility: visible;
-    opacity: 1;
-}
+
 /* a:visited #work-one-description {
     visibility: hidden;
 } */
@@ -564,10 +576,7 @@ button:hover {
     /* background-color: rgba(18, 18, 18, 0.5);
     border: 1px solid #ECECEC; */
 }
-#work-image-two-container:hover #work-two-description {
-    visibility: visible;
-    opacity: 1;
-}
+
 /* Mobile description */
 #work-image-two-desc-mobile {
     display: block;
@@ -615,10 +624,7 @@ button:hover {
     /* background-color: rgba(18, 18, 18, 0.5);
     border: 1px solid #ECECEC; */
 }
-#work-image-three-container:hover #work-three-description {
-    visibility: visible;
-    opacity: 1;
-}
+
 /* Mobile description */
 #work-image-three-desc-mobile {
     display: block;
