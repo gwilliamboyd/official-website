@@ -13,7 +13,7 @@ body {
     color: #ECECEC;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 200;
 }
 
 a {
@@ -30,7 +30,7 @@ button {
     padding: 0.75rem 1.25rem;
     font-family: inherit;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 300;
     color: #121212;
     background-color: #178FB2;
     border: 1px solid #121212;
@@ -205,8 +205,6 @@ button {
 
 }
 
-
-
 #nav-bar-ul img {
     max-width: 28px;
     display: block;
@@ -248,7 +246,7 @@ button {
     border: 1px solid #ECECEC; */
     grid-area: 4 / 2 / span 2 / span 3;
 }
-
+/*
 #my-work-home {
     font-size: 32px;
     font-weight: 300;
@@ -264,15 +262,15 @@ button {
     text-align: center;
     justify-self: center;
     /* background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC; */
+    border: 1px solid #ECECEC; 
     grid-area: 7 / 2 / span 1 / span 3;
 }
-
+*/
 #work-image-home-one {
     max-width: 100%;
     grid-area: 8 / 2 / span 1 / span 3;
 }
-/* constrain image size to anchor */
+ constrain image size to anchor */
 #work-image-home-one img {
     width: 100%;
 }
@@ -506,9 +504,6 @@ button {
 #work-one-image img {
     width: 100%;
 }
-/* #work-one-github button {
-    background-color: #1B8FE0;
-} */
 /* Desktop description */
 #work-one-description {
     grid-area: 3 / 2 / span 1 / span 5;
@@ -519,7 +514,7 @@ button {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(18, 18, 18, 0.8);
+    background: rgba(18, 18, 18, 0.85);
     color: #ECECEC;
     visibility: hidden;
     opacity: 0;
@@ -528,10 +523,6 @@ button {
     /* background-color: rgba(18, 18, 18, 0.5);
     border: 1px solid #ECECEC; */
 }
-
-/* a:visited #work-one-description {
-    visibility: hidden;
-} */
 /* Mobile description */
 #work-image-one-desc-mobile {
     display: block;
@@ -567,7 +558,7 @@ button {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(18, 18, 18, 0.8);
+    background: rgba(18, 18, 18, 0.85);
     color: #ECECEC;
     visibility: hidden;
     opacity: 0;
@@ -615,7 +606,7 @@ button {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(18, 18, 18, 0.8);
+    background: rgba(18, 18, 18, 0.85);
     color: #ECECEC;
     visibility: hidden;
     opacity: 0;
@@ -657,6 +648,9 @@ button {
     }
     #work-image-one-desc-mobile {
         grid-area: 4 / 2 / span 1 / span 5;
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
+
     }
     #work-one-github {
         grid-area: 5 / 2 / span 1 / span 5;
@@ -666,6 +660,8 @@ button {
     }
     #work-image-two-desc-mobile {
         grid-area: 7 / 2 / span 1 / span 5;
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
     }
     #work-two-github {
         grid-area: 8 / 2 / span 1 / span 5;
@@ -678,6 +674,8 @@ button {
     }
     #work-image-three-desc-mobile {
         grid-area: 10 / 2 / span 1 / span 5;
+        font-size: 1.2rem;
+        padding: 1rem 2rem;
     }
     #work-three-github {
         grid-area: 11 / 2 / span 1 / span 5;
@@ -716,6 +714,9 @@ button {
     }
 }
 @media (min-width: 1200px) {
+    #body-work {
+        padding: 32px 0;
+    }
     #heading-work {
         font-size: 60px;
         /* padding: 12px 0; */
@@ -734,12 +735,14 @@ button {
     #work-three-github button {
         font-size: 24px;
     } 
-    #work-one-description, #work-two-description {
+    #work-one-description, #work-two-description, #work-three-description {
         font-size: 32px;
-        font-weight: 600;
+        font-weight: 200;
+        /* color: #178FB2; */
     }
     #work-three-description {
-        font-size: 19px;
+        font-size: 28px;
+        /* color: #178FB2; */
     }
 }
 
@@ -769,6 +772,7 @@ button {
 
 #skills-heading {
     font-size: 42px;
+    font-weight: 300;
     text-align: center;
     align-self: center;
     max-width: 100%;
@@ -795,6 +799,7 @@ button {
 
 #bio-heading {
     font-size: 42px;
+    font-weight: 300;
     text-align: center;
     align-self: center;
     padding: 4px 0;
@@ -844,10 +849,12 @@ button {
     }
 }
 @media (min-width: 1200px) {
+    #body-about-me {
+        padding: 32px 0;
+    }
     #container-about-me {
         grid-template-columns: 11.5% 36% 6% 36% 11.5%; 
-    }
-    
+    }    
     #skills-heading {
         grid-area: 1 / 2 / span 1 / span 1;
     }
@@ -951,6 +958,9 @@ button {
     }
 }
 @media (min-width: 1200px) {
+    #body-contact {
+        padding: 32px 0;
+    }
     #container-contact {
         grid-template-rows: repeat(5, auto);
     }
@@ -971,6 +981,7 @@ button {
     #contact-photo {
         max-width: 60%;
         align-self: flex-start;
-        grid-area: 2 / 3 / span 3 / span 2;
+        justify-self: center;
+        grid-area: 2 / 4 / span 4 / span 1;
     }
 }
