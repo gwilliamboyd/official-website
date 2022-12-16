@@ -75,7 +75,7 @@ function scrollHome(){
 
 function scrollWork(){
     const workBody = document.getElementById('body-work');
-    let headerOffset = 80;
+    let headerOffset = 60;
     let workBodyPosition = workBody.getBoundingClientRect().top;
     let offsetPosition = workBodyPosition + window.pageYOffset - headerOffset;
 
@@ -86,7 +86,7 @@ function scrollWork(){
 }
 function scrollAboutMe(){
     const aboutMeBody = document.getElementById('body-about-me');
-    let headerOffset = 120;
+    let headerOffset = 60;
     let aboutMeBodyPosition = aboutMeBody.getBoundingClientRect().top;
     let offsetPosition = aboutMeBodyPosition + window.pageYOffset - headerOffset;
 
@@ -97,7 +97,7 @@ function scrollAboutMe(){
 }
 function scrollContact(){
     const contactBody = document.getElementById('body-contact');
-    let headerOffset = 30;
+    let headerOffset = 45;
     let contactBodyPosition = contactBody.getBoundingClientRect().top;
     let offsetPosition = contactBodyPosition + window.pageYOffset - headerOffset;
 

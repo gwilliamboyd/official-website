@@ -13,8 +13,14 @@
 <body>
     <!-- HEADER AND NAV BAR -->
     <nav id="nav-bar">
-        <!-- Logo - wordmark -->
-        <div id="logo-main">G William Boyd</div>
+        <!-- Logo - wordmark - spans are to change the font only on certain letters
+        Any characters within the 'font-alt' spans are in Montserrat Alternate instead 
+        of Montserrat -->
+        <div id="logo-main">
+            <a onclick="scrollHome()">
+                <span class="font-alt">G </span>W<span class="font-alt">i</span>ll<span class="font-alt">iam Boyd</span>
+            </a>
+        </div>
         <div id="nav-bar-links">
             <div id="nav-bar-ul">
                 <ul>
@@ -36,7 +42,7 @@
         </div>        
         <!-- Mobile menu icon -->
         <div id="mobile-menu-icon">
-            <img src="https://i.ibb.co/rMWV8PW/mobile-menu-icon.png" alt="Mobile menu">
+            <img src="./images/mobile-icon.png" alt="Mobile menu">
         </div>
     </nav>
     <!-- Mobile Menu - links -->
@@ -181,19 +187,20 @@
                     <img src="https://i.ibb.co/v4BpLGD/git-icon.png" alt="Git">
                 </div>
                 <div id="skill-icon-five">
-                    <img src="https://i.ibb.co/bvw0g3F/ps-icon.png" alt="Photoshop">
-                </div>
-                <div id="skill-icon-six">
-                    <img src="https://i.ibb.co/7VZQpTm/ai-icon.png" alt="Illustrator">
-                </div>
-                <div id="skill-icon-seven">
-                    <img src="https://i.ibb.co/rpjJ4gY/id-icon.png" alt="InDesign">
-                </div>
-                <div id="skill-icon-eight">
                     <img src="https://i.ibb.co/5kfzJh6/figma-icon.png" alt="Figma">
                 </div>
-                <div id="skill-icon-nine">
+                <!-- Change Blender to Bootstrap -->
+                <div id="skill-icon-six">
                     <img src="https://i.ibb.co/DtC9jyD/blender-icon.png" alt="Blender">
+                </div>
+                <div id="skill-icon-seven">
+                    <img src="https://i.ibb.co/bvw0g3F/ps-icon.png" alt="Photoshop">
+                </div>
+                <div id="skill-icon-eight">
+                    <img src="https://i.ibb.co/7VZQpTm/ai-icon.png" alt="Illustrator">
+                </div>
+                <div id="skill-icon-nine">
+                    <img src="https://i.ibb.co/rpjJ4gY/id-icon.png" alt="InDesign">
                 </div>
             </div>
             <!-- BIO -->

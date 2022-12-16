@@ -1,31 +1,32 @@
 /* Font import - Montserrat */
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap');
-
+/* Font import - Montserrat Alternates */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300&display=swap');
 /* MASTER STYLES */
 html {
     scroll-behavior: smooth;
 }
-
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     background: linear-gradient(#021318, #121212);
     color: #ECECEC;
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     font-weight: 200;
 }
-
 a {
-    display: inline-block;
     text-decoration: none;
     color: inherit;
 }
-
+div {
+    display: inline-block;
+    box-sizing: border-box;
+}
 img {
     border: 1px solid #ECECEC;
 }
-
 button {
     padding: 0.75rem 1.25rem;
     font-family: inherit;
@@ -53,7 +54,9 @@ button {
     -o-transition: border 3s;
     -moz-transition: border 3s ease; */
 }
-
+.font-alt {
+    font-family: 'Montserrat Alternates', sans-serif;
+}
 /* Sets :hover effects to only occur when hover capability exists
  - therefore, hover effects will be hidden on mobile */
 @media (hover: hover) and (pointer: fine) {
@@ -62,10 +65,13 @@ button {
         background-color: #121212;
         border: 1px solid #178FB2;    
     }
-    #mobile-menu-ul span:hover {
+    #logo-main:hover {
+        color: #178FB2;
+    }
+    /* #mobile-menu-ul span:hover {
         background-color: #323232;
         color: #FFFFFF;
-    }
+    } */
     #nav-bar-ul span:hover {
         /* background-color: #323232; */
         color: #178FB2;
@@ -227,7 +233,7 @@ button {
     display: grid;
     max-width: 100%;
     grid-template-columns: 11.5% 36% 6% 36% 11.5%;
-    grid-template-rows: repeat(2, auto);
+    grid-auto-rows: minmax(0px, auto);
     row-gap: 24px;
     align-items: center;
 }
@@ -319,7 +325,7 @@ button {
          so last 3 rows have been removed */ 
     #container-home {
         grid-template-columns: 9% 40% 3% 40% 9%;
-        grid-template-rows: repeat(6, auto);
+        grid-auto-rows: minmax(0px, auto);
         row-gap: 24px;
     }
 
@@ -380,7 +386,7 @@ button {
     
     #container-home {
         grid-template-columns: 9% 40% 3% 40% 9%;
-        grid-template-rows: repeat(5, auto);
+        grid-auto-rows: minmax(0px, auto);
         height: auto;
         row-gap: 12px;
     }
@@ -405,23 +411,21 @@ button {
     #nav-bar {
         padding: 18px 20px 18px 60px;
     }
-
     .footer {
         font-size: 14px;
     }
-
+    #body-home {
+        padding: 24px 0 90px;
+    }
     #container-home {
         row-gap: 40px;
     }
-
     #logo-main {
         font-size: 32px;
     }
-
     #nav-bar-links {
         font-size: 22px;
     }
-
     #nav-bar-ul span {
         padding: 18px 32px;
     }
@@ -429,23 +433,19 @@ button {
         max-width: 34px;
         padding: 4px 24px;
     }
-
     #home-cta {
         font-size: 20px;
         padding: 12px 24px;
     }
-
     #container-home #tall-portrait {
         max-width: 60%;
     }
-
     #bio-text-home {
         font-size: 26px;
         line-height: 2.0em;
         grid-area: 1 / 4 / span 2 / span 1;
         align-self: center;
     }
-
     #work-image-home-one, #work-image-home-two {
         width: 100%;
     }
@@ -491,14 +491,22 @@ button {
     border: 1px solid #ECECEC; */
 }
 
+/* Make overlay cover entire image 
+#work-image-one-container,
+#work-image-two-container,
+#work-image-three-container {
+    display: inline-block;
+}
+*/
 /* WORK IMAGE 1 */
 #work-image-one-container {
     position: relative;
     grid-area: 3 / 2 / span 1 / span 5;
-    justify-self: center;
+    justify-self: center;    
 }
 #work-one-image {
     max-width: 100%;
+    border: 0;
 }
 /* constrain image size to anchor */
 #work-one-image img {
@@ -544,6 +552,7 @@ button {
 }
 #work-two-image {
     max-width: 100%;
+    border: 0;
 }
 /* constrain image size to anchor */
 #work-two-image img {
@@ -593,6 +602,7 @@ button {
 }
 #work-three-image {
     max-width: 100%;
+    border: 0;
 }
 #work-three-image img {
     width: 100%;
@@ -715,7 +725,7 @@ button {
 }
 @media (min-width: 1200px) {
     #body-work {
-        padding: 32px 0;
+        padding: 40px 0;
     }
     #heading-work {
         font-size: 60px;
@@ -738,10 +748,16 @@ button {
     #work-one-description, #work-two-description, #work-three-description {
         font-size: 32px;
         font-weight: 200;
+        padding: 20px 32px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
         /* color: #178FB2; */
     }
     #work-three-description {
-        font-size: 28px;
+        font-size: 23px;
         /* color: #178FB2; */
     }
 }
@@ -760,7 +776,7 @@ button {
     display: grid;
     max-width: 100%;
     grid-template-columns: 12% 19% 19% 19% 19% 12%;
-    grid-template-rows: repeat(8, auto);
+    grid-auto-rows: minmax(0px, auto);
     row-gap: 24px;
     align-items: center;
 }
@@ -786,10 +802,9 @@ button {
     grid-area: 2 / 2 / span 1 / span 4;
     width: inherit;
     max-width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 33.33% 33.34% 33.33%;
+    grid-template-rows: repeat(3, auto);
     gap: 20px;
 }
 #skills-icons img {
@@ -850,7 +865,7 @@ button {
 }
 @media (min-width: 1200px) {
     #body-about-me {
-        padding: 32px 0;
+        padding: 40px 0;
     }
     #container-about-me {
         grid-template-columns: 11.5% 36% 6% 36% 11.5%; 
@@ -894,7 +909,7 @@ button {
     display: grid;
     max-width: 100%;
     grid-template-columns: 11.5% 36% 3% 36% 11.5%;
-    grid-template-rows: repeat(8, auto);
+    grid-auto-rows: minmax(0px, auto);
     row-gap: 24px;
     align-items: center;
 }
@@ -913,6 +928,8 @@ button {
 #contact-cta {
     grid-area: 2 / 2 / span 1 / span 3;
     font-size: 20px;
+    line-height: 1.8rem;
+    padding: 12px;
 }
 
 #contact-links {
@@ -935,13 +952,15 @@ button {
 @media (min-width: 600px) {
     #contact-cta {
         font-size: 24px;
-        line-height: 1.3em;
         justify-items: center;
     }
 }
 @media (min-width: 900px) {
+    #body-contact {
+        padding: 40px 0 60px;
+    }
     #container-contact {
-        grid-template-rows: repeat(5, auto);
+        grid-auto-rows: minmax(0px, auto);
         margin-bottom: 0;
     }
     #contact-heading {
@@ -957,12 +976,9 @@ button {
         grid-area: 2 / 4 / span 2 / span 1;
     }
 }
-@media (min-width: 1200px) {
-    #body-contact {
-        padding: 32px 0;
-    }
+@media (min-width: 1200px) {    
     #container-contact {
-        grid-template-rows: repeat(5, auto);
+        grid-auto-rows: minmax(0px, auto);
     }
     #contact-heading {
         font-size: 60px;
