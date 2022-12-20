@@ -64,9 +64,11 @@ button {
         color: #178FB2;
         background-color: #121212;
         border: 1px solid #178FB2;    
+        cursor: pointer;
     }
     #logo-main:hover {
         color: #178FB2;
+        cursor: pointer;
     }
     /* #mobile-menu-ul span:hover {
         background-color: #323232;
@@ -75,6 +77,7 @@ button {
     #nav-bar-ul span:hover {
         /* background-color: #323232; */
         color: #178FB2;
+        cursor: pointer;
     }
     #work-image-one-container:hover #work-one-description {
         visibility: visible;
