@@ -76,12 +76,43 @@
             alt="Self portrait - tall">
             <!-- Home Bio paragraph text -->
             <div id="bio-text-home">
-                Hi my name is G William Boyd and I am a <strong>front-end developer</strong> 
-                specializing in <strong>HTML emails</strong> for <strong>marketing 
-                and other business purposes</strong>!<br><br> I can design and 
-                develop your campaigns and email templates from scratch utilizing 
-                <strong>HTML</strong> and <strong>CSS</strong>, and create graphics 
-                using <strong>Photoshop</strong> and <strong>Illustrator</strong>.
+                <span id="bio-text-one">
+                    <span id="bio-text-name">
+                        G William Boyd
+                    </span>
+                    <span id="bio-text-dev">
+                        Front-end Web Developer
+                    </span>
+                </span>
+                <span id="bio-text-two">
+                    <span class="home-skill">
+                        <img class="home-skills-icon" src="images/react-icon.png" alt="React">
+                        <span>
+                            React
+                        </span>
+                    </span>
+                    <span class="home-skill">
+                        <img class="home-skills-icon" src="images/next-js-icon.png" alt="Next.js">
+                        <span>
+                            Next.js
+                        </span>
+                    </span>
+                    <span class="home-skill">
+                        <img class="home-skills-icon" src="images/js-icon.png" alt="Javascript">
+                        <span>
+                            Javascript
+                        </span>
+                    </span>
+                    <span class="home-skill">
+                        <img class="home-skills-icon" src="images/node-icon.png" alt="Figma">
+                        <span>
+                            Node.js
+                        </span>
+                    </span>
+                </span>                    
+                <span id="bio-text-three">
+                    From initial concept to final delivery, I'll make your online branding aspirations a reality!
+                </span>
             </div>                            
         </div>
     </div>
@@ -90,10 +121,29 @@
         <div id="container-work">            
             <div id="heading-work">My Work</div>
             <!-- Work description -->
-            <div id="work-intro">
+            <!-- <div id="work-intro">
                 HTML email templates coded and designed 
                 entirely by me from scratch! <br>
                 <em>Click each picture to see a full preview!</em>
+            </div> -->
+            <!-- HARRY POTTER - MOBILE -->
+            <div id="hogwarts-container-mobile">
+                <a href="https://gwilliamboyd.github.io/hogwarts-student-portal/" target="_blank">
+                    <img src="/images/hogwarts-student-portal-mobile.jpg" alt="Hogwarts Student Portal | React" id="hogwarts-image-mobile">
+                </a>
+                <a href="https://gwilliamboyd.github.io/hogwarts-student-portal/" class="hogwarts-description-mobile">
+                    React site utilizing data from a public <i><a href="https://hp-api.onrender.com/" id="api-link">Harry Potter API</a></i>
+                </a>
+            </div>
+            <!-- HARRY POTTER - DESKTOP -->
+            <div id="hogwarts-container">
+                <a href="https://gwilliamboyd.github.io/hogwarts-student-portal/" target="_blank">
+                    <img src="/images/hogwarts-student-portal.jpg" alt="Hogwarts Student Portal | React" id="hogwarts-image">                    
+                </a>
+                <a href="https://gwilliamboyd.github.io/hogwarts-student-portal/" target="_blank" id="hogwarts-description">
+                    <!-- Hogwarts Student Portal description -->
+                    React site utilizing data from a public Harry Potter API
+                </a>
             </div>
             <!-- The method below works, the only problem is that the description 
                 doesn't quite share the dimensions of the image - it's a few pixels 
@@ -175,32 +225,32 @@
             <!-- Skills - icons -->
             <div id="skills-icons">
                 <div id="skill-icon-one">
-                    <img src="https://i.ibb.co/mShJWrs/html5-icon.png" alt="HTML 5">
+                    <img src="images/react-icon.png" alt="React">                    
                 </div>
                 <div id="skill-icon-two">
-                    <img src="https://i.ibb.co/dmTHBZh/css-icon.png" alt="CSS 3">
+                    <img src="images/next-js-icon.png" alt="Next.js">                    
                 </div>
                 <div id="skill-icon-three">
                     <img src="https://i.ibb.co/TT4h7hx/js-icon.png" alt="Javascript">
                 </div>
                 <div id="skill-icon-four">
-                    <img src="https://i.ibb.co/v4BpLGD/git-icon.png" alt="Git">
+                    <img src="images/node-icon.png" alt="Node.js">
                 </div>
                 <div id="skill-icon-five">
                     <img src="https://i.ibb.co/5kfzJh6/figma-icon.png" alt="Figma">
                 </div>
                 <!-- Change Blender to Bootstrap -->
                 <div id="skill-icon-six">
-                    <img src="https://i.ibb.co/DtC9jyD/blender-icon.png" alt="Blender">
+                    <img src="https://i.ibb.co/mShJWrs/html5-icon.png" alt="HTML 5"> 
                 </div>
                 <div id="skill-icon-seven">
-                    <img src="https://i.ibb.co/bvw0g3F/ps-icon.png" alt="Photoshop">
+                    <img src="https://i.ibb.co/dmTHBZh/css-icon.png" alt="CSS 3">
                 </div>
                 <div id="skill-icon-eight">
-                    <img src="https://i.ibb.co/7VZQpTm/ai-icon.png" alt="Illustrator">
+                    <img src="https://i.ibb.co/bvw0g3F/ps-icon.png" alt="Photoshop">                    
                 </div>
                 <div id="skill-icon-nine">
-                    <img src="https://i.ibb.co/rpjJ4gY/id-icon.png" alt="InDesign">
+                    <img src="https://i.ibb.co/v4BpLGD/git-icon.png" alt="Git">
                 </div>
             </div>
             <!-- BIO -->
@@ -211,12 +261,8 @@
             alt="Guitar performance">
             <!-- BIO - paragraph text -->
             <div id="bio-personal">
-                I have also been a professional musician for 18 years, playing guitar, singing 
-                and writing songs for both myself and other artists! I have also been a private 
-                guitar teacher for more than 10 years! <br><br>
-                Most recently I have also worked as a 3D animator and character rigger for video games. <br><br>
-                When I'm not developing, I enjoy spending time with my friends, reading or watching 
-                Lord of the Rings, and cheering on my Dallas Stars!  
+                I have also worked as a 3D animator and character rigger for video games. <br><br>
+                When I'm not developing, I enjoy spending time with my friends, playing the guitar, and cheering on my Dallas Stars!  
             </div>                         
         </div>
     </div>
