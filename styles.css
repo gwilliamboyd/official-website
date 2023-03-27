@@ -1003,7 +1003,7 @@ constrain image size to anchor */ #work-image-home-one img {
 }
 @media (min-width: 1200px) {
 	#body-about-me {
-		background-image: url('https://i.ibb.co/pxNmFT1/bio-abstract-background-01.png');
+		background-image: url('https://i.ibb.co/WgbDsJ9/home-abstract-background-03.png');
 		background-position: center;
 		background-size: cover;
 		padding: 40px 0;
@@ -1036,6 +1036,7 @@ constrain image size to anchor */ #work-image-home-one img {
 	}
 	#bio-personal {
 		grid-area: 3 / 4 / span 1 / span 1;
+		font-weight: 300;
 		/* background-color: rgba(10, 16, 20, 0.8); */
 		/* border: 1px solid #3fd2d3; */
 	}
