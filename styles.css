@@ -11,7 +11,7 @@ body {
 	padding: 0;
 	box-sizing: border-box;
 	/* background: linear-gradient(#021318, #121212); */
-	background-color: #041b21;
+	background-color: #020f12;
 	color: #ececec;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
@@ -104,7 +104,7 @@ button {
 /* HEADER STYLES */
 
 #nav-bar {
-	background-color: #05222a;
+	background-color: #020f12;
 	/* background: linear-gradient(#121212, #021318); */
 	padding: 6px 18px;
 	margin: 0;
@@ -122,7 +122,8 @@ button {
 
 /* FOOTER STYLES */
 .footer {
-	background: linear-gradient(#121212, #021318);
+	/* background: linear-gradient(#121212, #021318); */
+	background-color: #020f12;
 	padding: 12px 32px;
 	margin: 0;
 	font-size: 8px;
