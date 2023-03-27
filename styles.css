@@ -467,7 +467,7 @@ constrain image size to anchor */ #work-image-home-one img {
 		font-size: 14px;
 	}
 	#body-home {
-		background-image: url('images/home-abstract-background-02.png');
+		background-image: url('https://i.ibb.co/T191qZS/home-abstract-background-02.png');
 		background-position: center;
 		background-size: cover;
 		padding: 1.5rem 0;
@@ -1001,7 +1001,7 @@ constrain image size to anchor */ #work-image-home-one img {
 }
 @media (min-width: 1200px) {
 	#body-about-me {
-		background-image: url('images/bio-abstract-background-01.png');
+		background-image: url('https://i.ibb.co/pxNmFT1/bio-abstract-background-01.png');
 		background-position: center;
 		background-size: cover;
 		padding: 40px 0;
