@@ -787,22 +787,24 @@ constrain image size to anchor */ #work-image-home-one img {
 	#work-one-description {
 		font-size: 19px;
 	}
-	#hogwarts-container-mobile {
+	#guithub-container-mobile {
 		display: none;
 	}
-	#hogwarts-container {
+	#guithub-container {
 		position: relative;
 		display: block;
 		max-width: 600px;
 		width: 100%;
 		justify-self: center;
-		grid-area: 3 / 2 / span 1 / span 5;
+		grid-area: 2 / 2 / span 1 / span 5;
 	}
-	#hogwarts-image {
+	#guithub-image {
 		width: 100%;
 	}
-
-	#hogwarts-description {
+	#guithub-description-mobile {
+		display: none;
+	}
+	#guithub-description {
 		grid-area: 3 / 2 / span 1 / span 5;
 		font-size: 2.5rem;
 		line-height: 1.7em;
@@ -822,41 +824,79 @@ constrain image size to anchor */ #work-image-home-one img {
 		/* background-color: rgba(18, 18, 18, 0.5);
         border: 1px solid #ECECEC; */
 	}
-	#work-image-one-container {
+	#hogwarts-container-mobile {
+		display: none;
+	}
+	#hogwarts-container {
+		position: relative;
+		display: block;
+		max-width: 600px;
+		width: 100%;
+		justify-self: center;
 		grid-area: 5 / 2 / span 1 / span 5;
 	}
-	#work-image-one-desc-mobile {
-		grid-area: 6 / 2 / span 1 / span 5;
-		font-size: 1.2rem;
-		padding: 1rem 2rem;
+	#hogwarts-image {
+		width: 100%;
 	}
-	#work-one-github {
+
+	#hogwarts-description {
+		grid-area: 6 / 2 / span 1 / span 5;
+		font-size: 2.5rem;
+		line-height: 1.7em;
+		text-align: center;
+		padding: 6px 12px;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: rgba(18, 18, 18, 0.85);
+		color: #ececec;
+		visibility: hidden;
+		opacity: 0;
+		/* transition effect. not necessary */
+		transition: opacity 0.3s, visibility 0.3s;
+		/* background-color: rgba(18, 18, 18, 0.5);
+        border: 1px solid #ECECEC; */
+	}
+	#hogwarts-github {
 		grid-area: 7 / 2 / span 1 / span 5;
 	}
-	#work-image-two-container {
+	#work-image-one-container {
 		grid-area: 8 / 2 / span 1 / span 5;
 	}
-	#work-image-two-desc-mobile {
+	#work-image-one-desc-mobile {
 		grid-area: 9 / 2 / span 1 / span 5;
 		font-size: 1.2rem;
 		padding: 1rem 2rem;
 	}
-	#work-two-github {
+	#work-one-github {
 		grid-area: 10 / 2 / span 1 / span 5;
+	}
+	#work-image-two-container {
+		grid-area: 11 / 2 / span 1 / span 5;
+	}
+	#work-image-two-desc-mobile {
+		grid-area: 12 / 2 / span 1 / span 5;
+		font-size: 1.2rem;
+		padding: 1rem 2rem;
+	}
+	#work-two-github {
+		grid-area: 13 / 2 / span 1 / span 5;
 	}
 	#work-two-description {
 		font-size: 19px;
 	}
 	#work-image-three-container {
-		grid-area: 11 / 2 / span 1 / span 5;
+		grid-area: 14 / 2 / span 1 / span 5;
 	}
 	#work-image-three-desc-mobile {
-		grid-area: 12 / 2 / span 1 / span 5;
+		grid-area: 15 / 2 / span 1 / span 5;
 		font-size: 1.2rem;
 		padding: 1rem 2rem;
 	}
 	#work-three-github {
-		grid-area: 13 / 2 / span 1 / span 5;
+		grid-area: 16 / 2 / span 1 / span 5;
 	}
 }
 @media (min-width: 900px) {
@@ -864,32 +904,45 @@ constrain image size to anchor */ #work-image-home-one img {
         grid-template-rows: repeat(5, auto);
     }     */
 	/* Hide mobile descriptions */
-
+	#guithub-container {
+		grid-area: 3 / 2 / span 1 / span 5;
+	}
+	#guithub-github {
+		grid-area: 4 / 2 / span 1 / span 5;
+	}
+	#hogwarts-container {
+		grid-area: 5 / 2 / span 1 / span 5;
+	}
+	#hogwarts-github {
+		grid-area: 6 / 2 / span 1 / span 5;
+	}
+	#guithub-description-mobile,
+	#hogwarts-description-mobile,
 	#work-image-one-desc-mobile,
 	#work-image-two-desc-mobile,
 	#work-image-three-desc-mobile {
 		display: none;
 	}
 	#work-image-one-container {
-		grid-area: 4 / 2 / span 1 / span 1;
+		grid-area: 7 / 2 / span 1 / span 1;
 	}
 	#work-one-github {
-		grid-area: 5 / 2 / span 1 / span 1;
+		grid-area: 8 / 2 / span 1 / span 1;
 	}
 	#work-image-two-container {
-		grid-area: 4 / 4 / span 1 / span 1;
+		grid-area: 7 / 4 / span 1 / span 1;
 	}
 	#work-two-github {
-		grid-area: 5 / 4 / span 1 / span 1;
+		grid-area: 8 / 4 / span 1 / span 1;
 	}
 	#work-two-description {
 		font-size: 19px;
 	}
 	#work-image-three-container {
-		grid-area: 4 / 6 / span 1 / span 1;
+		grid-area: 7 / 6 / span 1 / span 1;
 	}
 	#work-three-github {
-		grid-area: 5 / 6 / span 1 / span 1;
+		grid-area: 8 / 6 / span 1 / span 1;
 	}
 }
 @media (min-width: 1200px) {
@@ -905,15 +958,30 @@ constrain image size to anchor */ #work-image-home-one img {
 		/* padding: 12px 32px; */
 		padding: 0 32px;
 	}
-	#work-one-github button {
-		font-size: 24px;
+	#guithub-container {
+		max-width: 1000px;
+		width: 100%;
 	}
-	#work-two-github button {
-		font-size: 24px;
+	#guithub-image {
+		width: 100%;
 	}
+	#hogwarts-container {
+		max-width: 1000px;
+		width: 100%;
+	}
+	#hogwarts-image {
+		width: 100%;
+	}
+	#guithub-github button,
+	#hogwarts-github button,
+	#work-one-github button,
+	#work-two-github button,
 	#work-three-github button {
-		font-size: 24px;
+		font-size: 1.5rem;
 	}
+
+	#guithub-description,
+	#hogwarts-description,
 	#work-one-description,
 	#work-two-description,
 	#work-three-description {
