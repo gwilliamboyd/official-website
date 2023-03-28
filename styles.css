@@ -1019,7 +1019,7 @@ constrain image size to anchor */ #work-image-home-one img {
 	min-width: 100%;
 	max-width: 100%;
 	padding-top: 24px;
-	background-image: url('https://i.ibb.co/5xfjTzR/bio-abstract-background-mobile.png');
+	background-image: url('https://i.ibb.co/dkHqzLJ/bio-abstract-background-mobile.png');
 	background-position: center;
 	background-size: cover;
 }
@@ -1094,7 +1094,7 @@ constrain image size to anchor */ #work-image-home-one img {
 /* ABOUT ME MEDIA QUERIES */
 @media (min-width: 600px) {
 	#body-about-me {
-		background-image: url('https://i.ibb.co/sKJW6Yb/bio-abstract-background-tablet.png');
+		background-image: url('images/home-abstract-background-tablet-02.png');
 		background-position: center;
 		background-size: cover;
 	}
