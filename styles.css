@@ -244,6 +244,9 @@ button {
 	max-width: 100%;
 	height: 100%;
 	padding: 12px 0;
+	background-image: url('images/home-abstract-background-mobile.png');
+	background-position: center;
+	background-size: cover;
 }
 
 #container-home {
@@ -291,10 +294,10 @@ button {
 	flex-direction: column;
 }
 #bio-text-name {
-	font-size: 3rem;
+	font-size: 2.5rem;
 }
 #bio-text-dev {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	opacity: 0.8;
 	font-weight: 500;
 }
@@ -1016,6 +1019,9 @@ constrain image size to anchor */ #work-image-home-one img {
 	min-width: 100%;
 	max-width: 100%;
 	padding-top: 24px;
+	background-image: url('images/bio-abstract-background-mobile.png');
+	background-position: center;
+	background-size: cover;
 }
 
 #container-about-me {
@@ -1082,10 +1088,16 @@ constrain image size to anchor */ #work-image-home-one img {
 	/* background-color: rgba(18, 18, 18, 0.5);
     border: 1px solid #ECECEC; */
 	padding: 6px 12px;
+	font-weight: 300;
 }
 
 /* ABOUT ME MEDIA QUERIES */
 @media (min-width: 600px) {
+	#body-about-me {
+		background-image: url('images/bio-abstract-background-tablet.png');
+		background-position: center;
+		background-size: cover;
+	}
 	#skills-icons {
 		max-width: 50%;
 		justify-self: center;
