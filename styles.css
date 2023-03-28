@@ -273,27 +273,28 @@ button {
 	grid-area: 4 / 2 / span 2 / span 3;
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
+	justify-content: center;
 	gap: 2rem;
 }
 .home-skill {
 	display: flex;
 	align-items: center;
-	gap: 0.5rem;
+	font-size: 2.5rem;
+	gap: 2rem;
 }
 .home-skills-icon {
 	border: 0;
-	width: 40px;
+	width: 60px;
 }
 #bio-text-one {
 	display: flex;
 	flex-direction: column;
 }
 #bio-text-name {
-	font-size: 2.2rem;
+	font-size: 3rem;
 }
 #bio-text-dev {
-	font-size: 90%;
+	font-size: 1.5rem;
 	opacity: 0.8;
 	font-weight: 500;
 }
@@ -301,10 +302,6 @@ button {
 	display: flex;
 	flex-direction: column;
 	gap: 1rem;
-}
-.home-skill {
-	font-size: 1.8rem;
-	gap: 1.2rem;
 }
 #bio-text-three {
 	font-size: 1.2rem;
@@ -366,7 +363,17 @@ constrain image size to anchor */ #work-image-home-one img {
 
 @media (min-width: 600px) {
 	#body-home {
+		background-image: url('https://i.ibb.co/T191qZS/home-abstract-background-02.png');
+		background-position: center;
+		background-size: cover;
 		padding-top: 24px;
+	}
+	.home-skill {
+		font-size: 1.8rem;
+		gap: 1.2rem;
+	}
+	.home-skill img {
+		width: 40px;
 	}
 
 	#nav-bar > * {
@@ -381,7 +388,7 @@ constrain image size to anchor */ #work-image-home-one img {
        - only 5 rows are being used in tablet layout, 
          so last 3 rows have been removed */
 	#container-home {
-		grid-template-columns: 9% 40% 3% 40% 9%;
+		grid-template-columns: 6% 40% 8% 40% 6%;
 		grid-auto-rows: minmax(0px, auto);
 		row-gap: 24px;
 	}
@@ -391,9 +398,10 @@ constrain image size to anchor */ #work-image-home-one img {
 	}
 
 	#bio-text-home {
+		justify-content: flex-start;
 		font-size: 22px;
 		grid-area: 1 / 4 / span 2 / span 1;
-		line-height: 1.3em;
+		gap: 2.5rem;
 	}
 
 	/* #my-work-home {
