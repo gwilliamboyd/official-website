@@ -7,6 +7,7 @@ html {
 	scroll-behavior: smooth;
 }
 body {
+	position: relative;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
@@ -158,6 +159,7 @@ button {
 }
 
 #mobile-menu-links {
+	/* position: absolute; */
 	padding: 0;
 	margin: 0;
 	display: none;
@@ -167,12 +169,13 @@ button {
 	line-height: 2em;
 	width: 100%;
 	text-align: right;
-	position: sticky;
+	position: fixed;
 	top: 58px;
-	background-color: rgba(18, 18, 18, 0.7);
+	/* top: 0; */
+	background-color: rgba(18, 18, 18, 0.9);
 	/* z-index ensures position: absolute elements won't display 
     over the top of the nav-bar */
-	z-index: 100;
+	z-index: 10000;
 }
 
 #mobile-menu-ul ul {
