@@ -36,68 +36,27 @@ mobileMenu.addEventListener('click', () => {
 		mobileMenuLinks.style.display == 'none' ? 'flex' : 'none'
 })
 
-// Scroll down home page - offset by nav bar height
+// Click link to scroll to each section of page
 
-/* function scrollWork() {
-    const navbar = document.getElementById('#nav-bar');
-    //const navbarHeight = navbar.style.height;
-    //console.log(navbarHeight);
-
-    const workBody = document.getElementById("body-work");    
-    workBody.scrollIntoView().window.scrollBy(0, -50);
-    //window.scrollBy(0, 50);
-    //window.scroll
-    console.log(window.screenY);
-  } */
-
-// Scroll down home page - offset by nav bar height
-/* const navbar = document.getElementById('#nav-bar');
-  let navbarHeight = navbar.offsetHeight;
-  let navbarWidth = navbar.offsetWidth;
-  console.log(navbarHeight);
-  console.log(navbarWidth);
-
-  let domRect = navbar.getBoundingClientRect();
-  console.log(domRect);
- */
-
-/*   if(window.scrollY > 0) {
-    console.log('Window scrolled!');
-  } else if(window.scrollY === 0) {
-    console.log('At the top!');
-  }
-  
-  console.log(window.scrollY); */
-
-/*  document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM content is loaded');
-    
-  }); */
-
-// navbar.style.opacity = '1.0';
-
-// mobileMenu.style.color = 'red';
-// console.log(mobileMenu.style);
+//Check if user has scrolled at all
 userHasScrolled = false
 window.onscroll = function () {
-	//console.log(navbar.style.display);
-	//navbar.style.opacity = 1;
 	if (window.scrollY === 0) {
 		userHasScrolled = false
-		// navbar.style.opacity = 1;
 	} else {
 		userHasScrolled = true
-		// navbar.style.opacity = 0.5;
 	}
 	console.log(userHasScrolled)
 }
 console.log(userHasScrolled)
 
+// Scroll to Home (top)
 function scrollHome() {
 	window.scrollTo(0, 0)
 	closeMobileMenu()
 }
 
+// Scroll to My Work
 function scrollWork() {
 	const workBody = document.getElementById('body-work')
 	let headerOffset = 60
@@ -110,6 +69,8 @@ function scrollWork() {
 	})
 	closeMobileMenu()
 }
+
+//Scroll to About Me
 function scrollAboutMe() {
 	const aboutMeBody = document.getElementById('body-about-me')
 	let headerOffset = 60
@@ -122,6 +83,8 @@ function scrollAboutMe() {
 	})
 	closeMobileMenu()
 }
+
+// Scroll to Contact section
 function scrollContact() {
 	const contactBody = document.getElementById('body-contact')
 	let headerOffset = 45
