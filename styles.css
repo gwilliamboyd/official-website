@@ -119,9 +119,6 @@ button {
 	position: sticky;
 	top: 0;
 	border-bottom: 1px solid #ececec;
-	font-weight: 200;
-	/* z-index ensures position: absolute elements won't display 
-    over the top of the nav-bar */
 	z-index: 100;
 }
 
@@ -144,7 +141,6 @@ button {
 
 #logo-main {
 	font-size: 24px;
-	font-weight: 200;
 	min-width: fit-content;
 	transition: color 0.3s ease;
 	-webkit-transition: color 0.3s ease;
@@ -159,7 +155,6 @@ button {
 }
 
 #mobile-menu-links {
-	/* position: absolute; */
 	padding: 0;
 	margin: 0;
 	display: none;
@@ -171,10 +166,7 @@ button {
 	text-align: right;
 	position: fixed;
 	top: 58px;
-	/* top: 0; */
 	background-color: rgba(18, 18, 18, 0.9);
-	/* z-index ensures position: absolute elements won't display 
-    over the top of the nav-bar */
 	z-index: 10000;
 }
 
@@ -196,8 +188,7 @@ button {
 /* TABLET AND DESKTOP NAVBAR */
 
 #logo-main {
-	font-size: 24px;
-	font-weight: 200;
+	font-size: 20px;
 	min-width: fit-content;
 }
 
@@ -268,14 +259,10 @@ button {
 }
 
 #bio-text-home {
-	/* padding: 0.5rem 1rem; */
 	font-size: 14px;
-	/* max-width: 100%; */
 	width: 100%;
 	height: 100%;
 	align-self: start;
-	/* background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC; */
 	grid-area: 4 / 2 / span 2 / span 3;
 	display: flex;
 	flex-direction: column;
@@ -312,58 +299,6 @@ button {
 #bio-text-three {
 	font-size: 1.2rem;
 }
-
-/*
-#my-work-home {
-    font-size: 32px;
-    font-weight: 300;
-    grid-area: 6 / 2 / span 1 / span 3;
-    justify-self: center;
-    align-self: center;
-}
-
-#home-cta {
-    padding: 4px 12px;
-    max-width: fit-content;
-    font-size: 14px;
-    text-align: center;
-    justify-self: center;
-    /* background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC; 
-    grid-area: 7 / 2 / span 1 / span 3;
-}
-*/
-#work-image-home-one {
-	max-width: 100%;
-	grid-area: 8 / 2 / span 1 / span 3;
-}
-constrain image size to anchor */ #work-image-home-one img {
-	width: 100%;
-}
-
-#work-image-home-two {
-	max-width: 100%;
-	grid-area: 10 / 2 / span 1 / span 3;
-}
-/* constrain image size to anchor */
-#work-image-home-two img {
-	width: 100%;
-}
-
-#work-image-home-one-github {
-	grid-area: 9 / 2 / span 1 / span 3;
-	font-size: 12px;
-}
-#work-image-home-two-github {
-	grid-area: 11 / 2 / span 1 / span 3;
-	font-size: 12px;
-}
-
-/* #my-work-text-home {
-    font-size: 14px;
-    align-self: start;
-    grid-area: 7 / 2 / span 1 / span 3;
-} */
 
 /* HOME MEDIA QUERIES */
 
@@ -410,39 +345,18 @@ constrain image size to anchor */ #work-image-home-one img {
 		gap: 2.5rem;
 	}
 
-	/* #my-work-home {
-        font-size: 42px;
-        grid-area: 3 / 2 / span 1 / span 3;
-    }
-    #home-cta {
-        grid-area: 4 / 2 / span 1 / span 3;
-    }
-    
-    #work-image-home-one {
-        grid-area: 5 / 2 / span 1 / span 1;
-    }
-
-    #work-image-home-two {
-        grid-area: 5 / 4 / span 1 / span 1;
-    }
-    #work-image-home-one-github {
-        grid-area: 6 / 2 / span 1 / span 1;
-    }
-    #work-image-home-two-github {
-        grid-area: 6 / 4 / span 1 / span 1;
-    } */
-
 	#mobile-menu-icon {
 		display: none;
 	}
 
 	#nav-bar-links {
 		display: flex;
-		font-size: 19px;
+		font-size: 17px;
 	}
 
 	#nav-bar-ul ul {
 		display: flex;
+		gap: 0.75rem;
 	}
 	#nav-bar-ul span {
 		padding: 4px 8px;
@@ -451,6 +365,9 @@ constrain image size to anchor */ #work-image-home-one img {
 }
 
 @media (min-width: 900px) {
+	#nav-bar-ul ul {
+		gap: 1.5rem;
+	}
 	.footer {
 		font-size: 12px;
 	}
@@ -472,16 +389,9 @@ constrain image size to anchor */ #work-image-home-one img {
 		font-size: 25px;
 		line-height: 1.6em;
 	}
-
-	#my-work-home {
-		font-size: 48px;
-	}
 }
 
 @media (min-width: 1200px) {
-	#nav-bar {
-		padding: 18px 20px 18px 60px;
-	}
 	.footer {
 		font-size: 14px;
 	}
@@ -494,14 +404,20 @@ constrain image size to anchor */ #work-image-home-one img {
 	#container-home {
 		row-gap: 40px;
 	}
+	#nav-bar {
+		padding: 18px 20px 18px 60px;
+	}
 	#logo-main {
 		font-size: 32px;
 	}
 	#nav-bar-links {
 		font-size: 22px;
 	}
+	#nav-bar-ul ul {
+		gap: 0;
+	}
 	#nav-bar-ul span {
-		padding: 18px 32px;
+		padding: 18px 24px;
 	}
 	#nav-bar-ul img {
 		max-width: 34px;
@@ -551,10 +467,6 @@ constrain image size to anchor */ #work-image-home-one img {
 		flex-direction: row;
 		justify-content: space-between;
 	}
-	#work-image-home-one,
-	#work-image-home-two {
-		width: 100%;
-	}
 }
 
 /* WORK STYLES */
@@ -571,8 +483,7 @@ constrain image size to anchor */ #work-image-home-one img {
 	max-width: 100%;
 	grid-template-columns: 8.5% 25% 3% 25% 3% 25% 8.5%;
 	grid-auto-rows: minmax(0px, auto);
-	/* grid-template-rows: repeat(12, auto); */
-	row-gap: 28px;
+	row-gap: 1.75rem;
 	align-items: center;
 }
 #heading-work {
@@ -583,8 +494,6 @@ constrain image size to anchor */ #work-image-home-one img {
 	padding: 4px 0;
 	max-width: 100%;
 	grid-area: 1 / 2 / span 1 / span 5;
-	/* background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC; */
 }
 #work-intro {
 	padding: 4px 12px;
@@ -593,17 +502,8 @@ constrain image size to anchor */ #work-image-home-one img {
 	justify-self: center;
 	grid-area: 2 / 1 / span 1 / span 7;
 	line-height: 1.5em;
-	/* background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC; */
 }
 
-/* Make overlay cover entire image 
-#work-image-one-container,
-#work-image-two-container,
-#work-image-three-container {
-    display: inline-block;
-}
-*/
 /* GUITHUB STUDENT PORTAL */
 #guithub-container {
 	display: none;
@@ -615,7 +515,6 @@ constrain image size to anchor */ #work-image-home-one img {
 #guithub-image-mobile {
 	max-width: 100vw;
 	width: 100%;
-	/* width: 80%; */
 }
 #guithub-description-mobile {
 	grid-area: 3 / 2 / span 1 / span 5;
@@ -636,7 +535,6 @@ constrain image size to anchor */ #work-image-home-one img {
 #hogwarts-image-mobile {
 	max-width: 100vw;
 	width: 100%;
-	/* width: 80%; */
 }
 #hogwarts-description-mobile {
 	grid-area: 6 / 2 / span 1 / span 5;
@@ -675,10 +573,7 @@ constrain image size to anchor */ #work-image-home-one img {
 	color: #ececec;
 	visibility: hidden;
 	opacity: 0;
-	/* transition effect. not necessary */
 	transition: opacity 0.3s, visibility 0.3s;
-	/* background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC; */
 }
 /* Mobile description */
 #work-image-one-desc-mobile {
@@ -720,10 +615,7 @@ constrain image size to anchor */ #work-image-home-one img {
 	color: #ececec;
 	visibility: hidden;
 	opacity: 0;
-	/* transition effect. not necessary */
 	transition: opacity 0.3s, visibility 0.3s;
-	/* background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC; */
 }
 
 /* Mobile description */
@@ -738,9 +630,6 @@ constrain image size to anchor */ #work-image-home-one img {
 	font-size: 1rem;
 	justify-self: center;
 }
-/* #work-two-github button {
-    background-color: #ff6363;
-} */
 
 /* WORK IMAGE 3 */
 #work-image-three-container {
@@ -768,10 +657,7 @@ constrain image size to anchor */ #work-image-home-one img {
 	color: #ececec;
 	visibility: hidden;
 	opacity: 0;
-	/* transition effect. not necessary */
 	transition: opacity 0.3s, visibility 0.3s;
-	/* background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC; */
 }
 
 /* Mobile description */
@@ -785,9 +671,6 @@ constrain image size to anchor */ #work-image-home-one img {
 	grid-area: 16 / 2 / span 1 / span 5;
 	justify-self: center;
 }
-/* #work-three-github button {
-    background-color: #AF1A2F;
-} */
 
 /* WORK MEDIA QUERIES */
 @media (min-width: 600px) {
@@ -833,10 +716,7 @@ constrain image size to anchor */ #work-image-home-one img {
 		color: #ececec;
 		visibility: hidden;
 		opacity: 0;
-		/* transition effect. not necessary */
 		transition: opacity 0.3s, visibility 0.3s;
-		/* background-color: rgba(18, 18, 18, 0.5);
-        border: 1px solid #ECECEC; */
 	}
 	#hogwarts-container-mobile {
 		display: none;
@@ -868,10 +748,7 @@ constrain image size to anchor */ #work-image-home-one img {
 		color: #ececec;
 		visibility: hidden;
 		opacity: 0;
-		/* transition effect. not necessary */
 		transition: opacity 0.3s, visibility 0.3s;
-		/* background-color: rgba(18, 18, 18, 0.5);
-        border: 1px solid #ECECEC; */
 	}
 	#hogwarts-github {
 		grid-area: 7 / 2 / span 1 / span 5;
@@ -914,9 +791,6 @@ constrain image size to anchor */ #work-image-home-one img {
 	}
 }
 @media (min-width: 900px) {
-	/* #container-work {
-        grid-template-rows: repeat(5, auto);
-    }     */
 	/* Hide mobile descriptions */
 	#guithub-container {
 		grid-area: 3 / 2 / span 1 / span 5;
@@ -965,11 +839,9 @@ constrain image size to anchor */ #work-image-home-one img {
 	}
 	#heading-work {
 		font-size: 60px;
-		/* padding: 12px 0; */
 	}
 	#work-intro {
 		font-size: 24px;
-		/* padding: 12px 32px; */
 		padding: 0 32px;
 	}
 	#guithub-container {
@@ -1007,11 +879,9 @@ constrain image size to anchor */ #work-image-home-one img {
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
-		/* color: #178FB2; */
 	}
 	#work-three-description {
 		font-size: 23px;
-		/* color: #178FB2; */
 	}
 }
 
@@ -1051,8 +921,6 @@ constrain image size to anchor */ #work-image-home-one img {
 	max-width: 100%;
 	padding: 4px 0;
 	grid-area: 1 / 1 / span 1 / span 6;
-	/* background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC; */
 }
 
 #skills-icons {
@@ -1146,10 +1014,7 @@ constrain image size to anchor */ #work-image-home-one img {
 		grid-template-columns: 11.5% 36% 6% 36% 11.5%;
 	}
 	#skills-heading {
-		/* margin: 0 auto;
-		padding: 0 1rem; */
 		grid-area: 1 / 2 / span 1 / span 1;
-		/* background-color: rgba(10, 16, 20, 0.8); */
 	}
 	#skills-icons {
 		max-width: 90%;
@@ -1160,10 +1025,7 @@ constrain image size to anchor */ #work-image-home-one img {
 		width: 120px;
 	}
 	#bio-heading {
-		/* margin: 0 auto;
-		padding: 0 1rem; */
 		grid-area: 1 / 4 / span 1 / span 1;
-		/* background-color: rgba(10, 16, 20, 0.8); */
 	}
 	#container-about-me #tall-guitar {
 		grid-area: 2 / 4 / span 1 / span 1;
@@ -1202,8 +1064,6 @@ constrain image size to anchor */ #work-image-home-one img {
 	padding: 4px 0;
 	align-self: center;
 	grid-area: 1 / 1 / span 1 / span 6;
-	/* background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC; */
 }
 
 #contact-cta {
