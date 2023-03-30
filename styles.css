@@ -16,7 +16,7 @@ body {
 	color: #ececec;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
-	font-weight: 200;
+	font-weight: 300;
 }
 a {
 	text-decoration: none;
@@ -1025,6 +1025,7 @@ constrain image size to anchor */ #work-image-home-one img {
 	background-image: url('https://i.ibb.co/dkHqzLJ/bio-abstract-background-mobile.png');
 	background-position: center;
 	background-size: cover;
+	padding-bottom: 2rem;
 }
 
 #container-about-me {
@@ -1062,6 +1063,9 @@ constrain image size to anchor */ #work-image-home-one img {
 	grid-template-columns: 33.33% 33.34% 33.33%;
 	grid-template-rows: repeat(3, auto);
 	gap: 20px;
+	background-color: rgba(18, 18, 18, 0.5);
+	border-radius: 1rem;
+	box-shadow: 0 0 30px rgb(18, 18, 18);
 }
 #skills-icons img {
 	width: 80px;
@@ -1076,8 +1080,6 @@ constrain image size to anchor */ #work-image-home-one img {
 	padding: 4px 0;
 	max-width: 100%;
 	grid-area: 3 / 1 / span 1 / span 6;
-	/* background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC; */
 }
 
 #container-about-me #tall-guitar {
@@ -1088,10 +1090,11 @@ constrain image size to anchor */ #work-image-home-one img {
 #bio-personal {
 	grid-area: 5 / 2 / span 1 / span 4;
 	line-height: 1.8em;
-	/* background-color: rgba(18, 18, 18, 0.5);
-    border: 1px solid #ECECEC; */
 	padding: 6px 12px;
-	font-weight: 300;
+	font-weight: 400;
+	background-color: rgba(18, 18, 18, 0.5);
+	border-radius: 1rem;
+	box-shadow: 0 0 30px rgb(18, 18, 18);
 }
 
 /* ABOUT ME MEDIA QUERIES */
@@ -1104,6 +1107,12 @@ constrain image size to anchor */ #work-image-home-one img {
 	#skills-icons {
 		max-width: 50%;
 		justify-self: center;
+	}
+	#bio-personal,
+	#skills-icons {
+		background-color: rgba(18, 18, 18, 0);
+		border-radius: 0;
+		box-shadow: none;
 	}
 }
 @media (min-width: 900px) {
@@ -1161,9 +1170,6 @@ constrain image size to anchor */ #work-image-home-one img {
 	}
 	#bio-personal {
 		grid-area: 3 / 4 / span 1 / span 1;
-		font-weight: 300;
-		/* background-color: rgba(10, 16, 20, 0.8); */
-		/* border: 1px solid #3fd2d3; */
 	}
 }
 
