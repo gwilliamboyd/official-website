@@ -505,7 +505,6 @@ button {
 	grid-area: 2 / 1 / span 1 / span 7;
 	line-height: 1.5em;
 }
-
 /* GUITHUB STUDENT PORTAL */
 #guithub-container {
 	display: none;
@@ -683,6 +682,32 @@ button {
 		grid-area: 2 / 2 / span 1 / span 5;
 		font-size: 20px;
 	}
+	.skills-used {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 1rem;
+		font-size: 1.4rem;
+	}
+	.skills {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		gap: 1rem;
+	}
+	.work-skill {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 1.2rem;
+	}
+	.work-skill img {
+		width: 35px;
+	}
+	#sanity-skill {
+		font-size: 1.2rem;
+	}
 	#work-one-description {
 		font-size: 19px;
 	}
@@ -699,13 +724,14 @@ button {
 	}
 	#guithub-image {
 		width: 100%;
+		border: 0;
 	}
 	#guithub-description-mobile {
 		display: none;
 	}
 	#guithub-description {
 		grid-area: 3 / 2 / span 1 / span 5;
-		font-size: 2.5rem;
+		font-size: 1.6rem;
 		line-height: 1.7em;
 		text-align: center;
 		padding: 6px 12px;
@@ -714,6 +740,10 @@ button {
 		bottom: 0;
 		left: 0;
 		right: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 1rem;
 		background: rgba(18, 18, 18, 0.85);
 		color: #ececec;
 		visibility: hidden;
@@ -733,11 +763,12 @@ button {
 	}
 	#hogwarts-image {
 		width: 100%;
+		border: 0;
 	}
 
 	#hogwarts-description {
 		grid-area: 6 / 2 / span 1 / span 5;
-		font-size: 2.5rem;
+		font-size: 1.6rem;
 		line-height: 1.7em;
 		text-align: center;
 		padding: 6px 12px;
@@ -746,6 +777,10 @@ button {
 		bottom: 0;
 		left: 0;
 		right: 0;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 1rem;
 		background: rgba(18, 18, 18, 0.85);
 		color: #ececec;
 		visibility: hidden;
@@ -793,15 +828,54 @@ button {
 	}
 }
 @media (min-width: 900px) {
+	.skills-used {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+		font-size: 2rem;
+	}
+	.skills {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		gap: 1.5rem;
+	}
+	.work-skill {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		font-size: 1.8rem;
+	}
+	.work-skill img {
+		width: 50px;
+	}
+	#sanity-skill {
+		font-size: 1.6rem;
+	}
 	/* Hide mobile descriptions */
 	#guithub-container {
 		grid-area: 3 / 2 / span 1 / span 5;
+		max-width: 900px;
+	}
+	#guithub-description,
+	#hogwarts-description {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		gap: 2rem;
+		font-size: 2.2rem;
 	}
 	#guithub-github {
 		grid-area: 4 / 2 / span 1 / span 5;
 	}
 	#hogwarts-container {
 		grid-area: 5 / 2 / span 1 / span 5;
+		max-width: 900px;
+	}
+	#hogwarts-description {
+		font-size: 2rem;
 	}
 	#hogwarts-github {
 		grid-area: 6 / 2 / span 1 / span 5;
@@ -846,9 +920,28 @@ button {
 		font-size: 24px;
 		padding: 0 32px;
 	}
+	.skills-used {
+		gap: 2rem;
+		font-size: 2.5rem;
+	}
+	.skills {
+		gap: 2rem;
+	}
+	.work-skill {
+		align-items: center;
+		gap: 1rem;
+		font-size: 1.8rem;
+	}
+	.work-skill img {
+		width: 60px;
+	}
+	#sanity-skill {
+		font-size: 1.6rem;
+	}
 	#guithub-container {
 		max-width: 1000px;
 		width: 100%;
+		font-size: 2rem;
 	}
 	#guithub-image {
 		width: 100%;
@@ -873,14 +966,15 @@ button {
 	#work-one-description,
 	#work-two-description,
 	#work-three-description {
-		font-size: 32px;
-		font-weight: 200;
+		font-size: 2rem;
+		/* font-weight: 200; */
 		padding: 20px 32px;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: center;
 		align-items: center;
+		gap: 0;
 	}
 	#work-three-description {
 		font-size: 23px;
