@@ -377,7 +377,7 @@ button {
 	}
 
 	#container-home {
-		grid-template-columns: 9% 40% 3% 40% 9%;
+		grid-template-columns: 5% 44% 3% 44% 5%;
 		grid-auto-rows: minmax(0px, auto);
 		height: auto;
 		row-gap: 12px;
